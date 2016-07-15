@@ -20,15 +20,17 @@
         ANDY WOLFF
       </h1>
       <div class="topics">
-        <a class="sliding-middle-out">ABOUT</a>
-        <a class="sliding-middle-out">MOTION</a>
-        <a class="sliding-middle-out">STILL</a>
-        <a class="sliding-middle-out">CONTACT</a>
+        <a href='#about' class="sliding-middle-out">ABOUT</a>
+        <a href='#motion' class="sliding-middle-out">MOTION</a>
+        <a href='#still' class="sliding-middle-out">STILL</a>
+        <a href='#contact' class="sliding-middle-out">CONTACT</a>
       </div>
 
 
       <div>
+        <a href='#arrow'>
         <img src='img/arrow.png' class='blink-image'></img>
+        </a>
      </div>
      
     </div>
@@ -43,7 +45,7 @@
 
 
 
-<div class="space">
+<div id='arrow' class="space">
 
 
   
@@ -60,12 +62,16 @@
 
 
 
-<div class="space">
+<div id='motion' class="space">
+
+  <h2 >
+      MOTION
+  </h2>
 
  
    <ul id="rig">
     <li>
-        <a class="rig-cell" href="#">
+        <a class="rig-cell">
             <img class="rig-img" src="img/12.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">ANDY'S REELS</span>
@@ -73,7 +79,7 @@
         </a>
     </li>
     <li>
-        <a class="rig-cell" href="#">
+        <a class="rig-cell">
             <img class="rig-img" src="img/120.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">ANDY'S REELS</span>
@@ -81,7 +87,7 @@
         </a>
     </li>
     <li>
-        <a class="rig-cell" href="#">
+        <a class="rig-cell">
             <img class="rig-img" src="img/111.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">ANDY'S REELS</span>
@@ -89,7 +95,7 @@
         </a>
     </li>
     <li>
-        <a class="rig-cell" href="#">
+        <a class="rig-cell">
             <img class="rig-img" src="img/44.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">ANDY'S REELS</span>
@@ -97,7 +103,7 @@
         </a>
     </li>
     <li>
-        <a class="rig-cell" href="#">
+        <a class="rig-cell">
             <img class="rig-img" src="img/66.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">ANDY'S REELS</span>
@@ -105,7 +111,7 @@
         </a>
     </li>
     <li>
-        <a class="rig-cell" href="#">
+        <a class="rig-cell">
             <img class="rig-img" src="img/03.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">ANDY'S REELS</span>
@@ -121,27 +127,91 @@
 </div>
 
 
+<div id='still' class="space">
 
-<div class="space">
-
-
-  
-    <p>
+  <h2>
       STILL
+  </h2>
+
+ 
+   <ul id="rig">
+    <li>
+        <a class="rig-cell" >
+            <img class="rig-img" src="img/12.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">ANDY'S PHOTOS</span>
+            
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" >
+            <img class="rig-img" src="img/120.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">ANDY'S PHOTOS</span>
+            
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" >
+            <img class="rig-img" src="img/111.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">ANDY'S PHOTOS</span>
+            
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" >
+            <img class="rig-img" src="img/44.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">ANDY'S PHOTOS</span>
+            
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" >
+            <img class="rig-img" src="img/66.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">ANDY'S PHOTOS</span>
+            
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" >
+            <img class="rig-img" src="img/03.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">ANDY'S PHOTOS</span>
+            
+        </a>
+    </li>
+    
+
+
+
+</ul>
+    
+</div>
+
+
+
+<div class="space, top">
+    
+ 
+    <p id='about'>
+      ABOUT
     </p>
 
     <p>
       ANDY IS REAL COOL AND KNOWS MANY THINGS
     </p>
-
 </div>
 
 
 
-<div class="space">
+
+<div class="space, top">
     
  
-    <p>
+    <p id='contact'>
       CONTACT
     </p>
 
@@ -154,8 +224,8 @@
 
 
 
-<script src="http://code.jquery.com/jquery.js"></script>
-<script type="text/javascript" src="../../js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src='js/jquery.sticky.js'></script>
 <script src="script.js"></script>
 
   </body>
