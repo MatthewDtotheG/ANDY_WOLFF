@@ -138,55 +138,55 @@ a {
 
 .blink-image {
 	margin-top: 12%;
-	width: 70px;
+	width: 50px;
 
 }
 
 @-moz-keyframes blink {
     0% {
-        opacity:1;
+        opacity:0.5;
     }
     50% {
         opacity:0;
     }
     100% {
-        opacity:1;
+        opacity:0.5;
     }
 } 
 
 @-webkit-keyframes blink {
     0% {
-        opacity:1;
+        opacity: 0.5;
     }
     50% {
         opacity:0;
     }
     100% {
-        opacity:1;
+        opacity:0.5;
     }
 }
 /* IE */
 @-ms-keyframes blink {
     0% {
-        opacity:1;
+        opacity:0.5;
     }
     50% {
         opacity:0;
     }
     100% {
-        opacity:1;
+        opacity:0.5;
     }
 } 
 /* Opera and prob css3 final iteration */
 @keyframes blink {
     0% {
-        opacity:1;
+        opacity:0.5;
     }
     50% {
         opacity:0;
     }
     100% {
-        opacity:1;
+        opacity:0.5;
     }
 } 
 .blink-image {
@@ -226,6 +226,11 @@ a {
     margin:0;
     padding:0;
 }
+
+
+
+
+
         
 /* The wrapper for each item */
 .rig-cell {
@@ -300,6 +305,8 @@ a {
     #rig li {
         width:33.33%;
     }
+
+
 }
 
 @media (max-width: 700px) {
