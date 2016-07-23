@@ -210,8 +210,8 @@ a {
 
 
 #rig {
-    max-width: 85%;
-    margin:0 auto; /*center aligned*/
+    max-width: 77%;
+    margin: auto; /*center aligned*/
     padding:0;
     font-size:0; /* Remember to change it back to normal font size if have captions */
     list-style:none;
@@ -302,8 +302,21 @@ a {
 }
 
 @media (max-width: 9000px) {
+
     #rig li {
-        width:33.33%;
+        width: 33.33%;
+    }
+
+    #rig.FOUR li {
+        width: 25%;
+    }
+
+    #rig li.TOP {
+        
+        width: 85%;
+        margin: auto;
+        display: block;
+        
     }
 
 

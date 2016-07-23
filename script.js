@@ -1,8 +1,10 @@
 
 
 
-$(document).ready(function(){
-  $('a[href^="#"]').on('click',function (e) {
+$(function(){
+
+
+    $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
 
       var target = this.hash;
@@ -15,3 +17,21 @@ $(document).ready(function(){
       });
   });
 });
+
+
+   $('.gallery').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'iframe',
+        gallery: {
+          enabled:true
+        }
+    });
+  });
+
+
+
+
+
+
+
