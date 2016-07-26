@@ -18,16 +18,97 @@ $(function(){
   });
 });
 
+// MOTION GALLERY
+
 
    $('.gallery').each(function() { // the containers for all your galleries
-    $(this).magnificPopup({
-        delegate: 'a', // the selector for gallery item
-        type: 'iframe',
+    $(this).find('a').magnificPopup({
+        type: 'image',
         gallery: {
           enabled:true
         }
     });
   });
+
+
+   // STILL IMAGES
+
+  $('#FILM').magnificPopup({
+    items: [
+      {
+        src: 'img/66.jpg'
+      },
+
+      {
+        src: 'img/2.jpg'
+      },
+      {
+        src: 'img/120.jpg'
+      },
+
+      
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is default type
+}); 
+
+$('#DIGITAL').magnificPopup({
+    items: [
+      {
+        src: 'img/66.jpg'
+      },
+
+      {
+        src: 'img/2.jpg'
+      },
+      {
+        src: 'img/120.jpg'
+      },
+
+      
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is default type
+}); 
+
+$('#LIFESTYLE').magnificPopup({
+    items: [
+      {
+        src: 'img/66.jpg'
+      },
+
+      {
+        src: 'img/2.jpg'
+      },
+      {
+        src: 'img/120.jpg'
+      },
+
+      
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is default type
+}); 
+
+// STICKY HEADER
+
+$('.NAV').sticky();
+$('.NAV').hide();
+
+$('.NAV').on('sticky-start', function () {
+ $('.NAV').fadeIn();
+});
+
+
+$('.NAV').on('sticky-end', function () {
+ $('.NAV').hide();
+});
 
 
 

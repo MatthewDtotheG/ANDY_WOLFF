@@ -8,10 +8,10 @@
   
 
 <body>
-  	
-  <div id='Container'>
 
-  	
+
+ 	  
+  <div id='Container'>  	
   		<video autoplay loop muted poster="screenshot.jpg">
 			<source src="videos/small.mp4" type="video/mp4">
 		  </video>
@@ -35,26 +35,35 @@
      </div>
      
     </div>
-    
-
-
-
+  
+  </div>
 </div>
 
   	<!-- image grid  --> 
+
+    <div id='NAV' class="NAV">
+      <div class='wrap'>
+        <a href='#about' class="sliding-middle-out N">ABOUT</a>
+        <a href='#motion' class="sliding-middle-out N">MOTION</a>
+        <a href='#still' class="sliding-middle-out N">STILL</a>
+        <a href='#contact' class="sliding-middle-out N">CONTACT</a>
+      </div>
+    </div>
 
 
 
 
 <div id='arrow' class="space">
 
-
+    
   
-    <h2>
+    <h2 >
       CALL TO ACTION
     </h2>
 
-    <p class'call'>
+  
+
+    <p  class'call'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
     </p>
@@ -64,65 +73,57 @@
 
 
 
-<div class="space">
+<div id='motion' class="space gallery">
  
    <ul id="rig"> 
 
     
-    <li id='motion' class='TOP'>
-     <div class='gallery'>
-        <a href='https://vimeo.com/90273322' class="rig-cell mfp-iframe">
+    <li  class='TOP'>
+     
+        <a href='videos/REEL.mp4' type='video/mp4' class="rig-cell mfp-iframe">
             <img class="rig-img" src="img/44.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">ANDY'S REELS</span>
+            <span class="rig-text">REEL</span>
         </a>
-     </div>
-
+     
     </li>
    </ul>
-</div>
 
-
-
-<div class="space">
  
    <ul id="rig" class='FOUR'>
-   
-   <div class='gallery'> 
     <li>
-        <a href='https://vimeo.com/90273322' class="rig-cell mfp-iframe">
+        <a href='videos/small.mp4' type='video/mp4' class="rig-cell mfp-iframe">
             <img class="rig-img" src="img/120.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">ANDY'S REELS</span>
+            <span class="rig-text">SHORT</span>
             
         </a>
     </li>
     <li>
-        <a href='https://vimeo.com/107258110' class="rig-cell mfp-iframe">
+        <a href='videos/Zook.mp4' type='video/mp4' class="rig-cell mfp-iframe">
             <img class="rig-img" src="img/111.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">ANDY'S REELS</span>
+            <span class="rig-text">ZOOK</span>
             
         </a>
     </li>
     <li>
-        <a href='https://vimeo.com/95091138' class="rig-cell mfp-iframe">
+        <a href='videos/REEL.mp4' type='video/mp4' class="rig-cell mfp-iframe">
             <img class="rig-img" src="img/66.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">ANDY'S REELS</span>
+            <span class="rig-text">REEL</span>
             
         </a>
     </li>
     <li>
-        <a href='https://vimeo.com/108742372' class="rig-cell mfp-iframe">
+        <a href='videos/small.mp4' type='video/mp4' class="rig-cell mfp-iframe">
             <img class="rig-img" src="img/03.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">ANDY'S REELS</span>
+            <span class="rig-text">SHORT</span>
             
         </a>
     </li>
-</div>
-
+  </div>
 </ul>
     
 </div>
@@ -141,7 +142,7 @@
 
    <ul id="rig">
     <li>
-        <a class="rig-cell" >
+        <a id='FILM' class="rig-cell FLIM" >
             <img class="rig-img" src="img/1.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">FILM</span>
@@ -149,7 +150,7 @@
         </a>
     </li>
     <li>
-        <a class="rig-cell" >
+        <a id='DIGITAL' class="rig-cell" >
             <img class="rig-img" src="img/2.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">DIGITAL</span>
@@ -157,7 +158,7 @@
         </a>
     </li>
     <li>
-        <a class="rig-cell" >
+        <a id='LIFESTYLE' class="rig-cell LIFESTYLE" >
             <img class="rig-img" src="img/4.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">LIFESTYLE</span>
@@ -208,8 +209,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-<script src="magnific-popup.js"></script>
-
+<script src="jquery.magnific-popup.js"></script>
+<script src="jquery.sticky.js"></script>
 <script src="script.js"></script>
 
   </body>
