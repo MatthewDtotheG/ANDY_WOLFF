@@ -1,5 +1,5 @@
 
-
+//ANCHOR TAGS
 
 $(function(){
 
@@ -96,7 +96,10 @@ $('#LIFESTYLE').magnificPopup({
     type: 'image' // this is default type
 }); 
 
+
+
 // STICKY HEADER
+
 
 $('.NAV').sticky();
 $('.NAV').hide();
@@ -105,12 +108,9 @@ $('.NAV').on('sticky-start', function () {
  $('.NAV').fadeIn();
 });
 
-
 $('.NAV').on('sticky-end', function () {
  $('.NAV').hide();
 });
-
-
 
 
 

@@ -59,9 +59,9 @@
             s.stickyElement
               .css({
                 'width': '',
-                'position': '',
+                'position': 'absolute',
                 'top': '',
-                'z-index': ''
+                'z-index': '1040'
               });
             s.stickyElement.parent().removeClass(s.className);
             s.stickyElement.trigger('sticky-end', [s]);
@@ -90,7 +90,7 @@
               .css('width', newWidth)
               .css('position', 'fixed')
               .css('top', newTop)
-              .css('z-index', s.zIndex);
+              .css('z-index', '1040');
 
             s.stickyElement.parent().addClass(s.className);
 
@@ -121,13 +121,13 @@
               .css('position', 'absolute')
               .css('top', '')
               .css('bottom', 0)
-              .css('z-index', '');
+              .css('z-index', '1040');
           } else {
             s.stickyElement
               .css('position', 'fixed')
               .css('top', newTop)
               .css('bottom', '')
-              .css('z-index', s.zIndex);
+              .css('z-index', '1040');
           }
         }
       }
