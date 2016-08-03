@@ -57,35 +57,14 @@ $(function(){
 $('#DIGITAL').magnificPopup({
     items: [
       {
-        src: 'img/66.jpg'
+        src: 'img/4.jpg'
       },
 
       {
-        src: 'img/2.jpg'
+        src: 'img/111.jpg'
       },
       {
-        src: 'img/120.jpg'
-      },
-
-      
-    ],
-    gallery: {
-      enabled: true
-    },
-    type: 'image' // this is default type
-}); 
-
-$('#LIFESTYLE').magnificPopup({
-    items: [
-      {
-        src: 'img/66.jpg'
-      },
-
-      {
-        src: 'img/2.jpg'
-      },
-      {
-        src: 'img/120.jpg'
+        src: 'img/03.jpg'
       },
 
       
