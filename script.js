@@ -18,6 +18,9 @@ $(function(){
   });
 });
 
+
+
+
 // MOTION GALLERY
 
 
@@ -28,7 +31,10 @@ $(function(){
           enabled:true
         }
     });
+
   });
+
+
 
 
    // STILL IMAGES
@@ -37,6 +43,7 @@ $(function(){
     items: [
       {
         src: 'img/66.jpg'
+
       },
 
       {
