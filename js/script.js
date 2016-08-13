@@ -1,4 +1,4 @@
-
+$(document).ready(function() {
 //ANCHOR TAGS
 
 $(function(){
@@ -19,24 +19,11 @@ $(function(){
 });
 
 
-//   VIDEO GALLERY
+// VIDEO GALLERY
 
-lightGallery(document.getElementById('FUCK'));
-
-
-$('FUCK').lightGallery({
-    selector: 'THIS'
-});
-
-    
-
+//$("#lightgallery").lightGallery(); 
 
 // VIDEO GALLERY END
-
-
-
-
-
 
 
 // STICKY HEADER
@@ -54,6 +41,4 @@ $('.NAV').on('sticky-end', function () {
 });
 
 
-
-
-
+});
