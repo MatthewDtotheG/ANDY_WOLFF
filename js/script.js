@@ -19,15 +19,16 @@ $(function(){
 });
 
 
-// VIDEO GALLERY
+//   VIDEO GALLERY
+
+lightGallery(document.getElementById('FUCK'));
 
 
-
-$('.gallery').modaal({
-  type: 'video'
-
+$('FUCK').lightGallery({
+    selector: 'THIS'
 });
 
+    
 
 
 // VIDEO GALLERY END
