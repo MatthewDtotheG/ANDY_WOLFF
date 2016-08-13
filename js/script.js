@@ -21,7 +21,9 @@ $(function(){
 
 // VIDEO GALLERY
 
-//$("#lightgallery").lightGallery(); 
+$("#lightgallery").lightGallery({
+  selector: '.lightgallery-el'
+}); 
 
 // VIDEO GALLERY END
 
