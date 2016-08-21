@@ -67,12 +67,12 @@ a {
 footer {
 
     margin-top: 0px;
-    background-color: #252525;
+    background-color: black;
     left:0px;
     bottom:0px;
     height:250px;
     width:100%;
-    
+    opacity: .7;    
 }
 
 #arrow {
@@ -197,8 +197,6 @@ footer {
     opacity: .2;
     display: block;
     margin-top: 90px;
-    
-
 }
 
 
@@ -256,14 +254,47 @@ footer {
     background-color:#e5e5e5;
     border-color: none;
    
-    margin-top: 250px;
+    margin-top: 150px;
     margin-bottom: 1200px;
 }
 
 
+.RESUME {
+    color: black;
+    border: 1px solid black;
+    padding: 10px 84px;
+    margin: 35px 0px;
 
 
-/* ABOUT PAGE END */
+}
+
+.RESUME:hover {
+    background-color: black;
+    color: #e5e5e5;
+    opacity: .7;
+}
+
+.social {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.socialWrap {
+
+}
+
+a img.social:hover {
+    opacity: .5;
+}
+
+.A {
+    margin-bottom: 20px;
+}
+
+
+/* ABOUT PAGE END  */
 
 
 

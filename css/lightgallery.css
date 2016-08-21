@@ -215,6 +215,7 @@
   padding-left: 20px;
   padding-top: 12px;
   vertical-align: middle;
+  font-family: 'Open Sans';
 }
 
 .lg-toolbar, .lg-prev, .lg-next {
@@ -882,14 +883,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   right: 0;
   bottom: 0;
   z-index: 1040;
-  background-color: #000;
+  background-color: black;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease 0s;
   -o-transition: opacity 0.15s ease 0s;
   transition: opacity 0.15s ease 0s;
 }
 .lg-backdrop.in {
-  opacity: 1;
+  opacity: .9;
 }
 
 .lg-css3.lg-no-trans .lg-prev-slide, .lg-css3.lg-no-trans .lg-next-slide, .lg-css3.lg-no-trans .lg-current {
