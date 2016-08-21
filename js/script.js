@@ -22,6 +22,7 @@ $(function(){
 // VIDEO GALLERY
 
 $("#lightgallery").lightGallery({
+  enableTouch: true,
   selector: '.lightgallery-el'
 }); 
 
@@ -32,19 +33,67 @@ $("#lightgallery").lightGallery({
 
 // IMAGE GALLERY
 
-/*
-$( "DIGITAL" ).lightgallery({
-     selector: 'DIGITAL-A',     
-     dynamic: true,
-     dynamicEl: [
-      {
-        src: 'img/66.jpg',
-        src: 'img/2.jpg',
-        src: 'img/120.jpg'
-      }
-    ]
-}); 
-*/
+$('#FILM').on('click', function() {
+ 
+    $(this).lightGallery({
+        download: false,
+        hideBarsDelay: 3000,
+        enableTouch: true,
+        dynamic: true,
+        dynamicEl: [{
+            "src": 'img/1A.jpg',
+        }, {
+            'src': 'img/120.jpg',
+        }, 
+            {
+            'src': 'img/111.jpg',
+        },
+        {
+            'src': 'img/4.jpg',
+        }]
+    })
+ 
+});
+
+
+
+$('#DIGITAL').on('click', function() {
+ 
+    $(this).lightGallery({
+        download: false,
+        hideBarsDelay: 3000,
+        enableTouch: true,
+        dynamic: true,
+        dynamicEl: [{
+            "src": 'img/2A.jpg',
+        }, {
+            'src': 'img/66.jpg',
+        }, 
+            {
+            'src': 'img/111.jpg',
+        },
+        {
+            'src': 'img/44.jpg',
+        }]
+    })
+ 
+});
+
+
+
+$('#RESUME').on('click', function() {
+ 
+    $(this).lightGallery({
+        counter: false,
+        hideBarsDelay: 700,
+        enableTouch: true,
+        dynamic: true,
+        dynamicEl: [{
+            "src": 'img/RESUME.jpg',
+        }]
+    })
+ 
+});
 
 
 // IMAGE GALLERY END

@@ -230,6 +230,7 @@ footer {
     float: left;
     position: relative;
     margin: 10px;
+    
 }
 
 .ABOUT {
@@ -252,9 +253,9 @@ footer {
     list-style:none;
     background-color:#e5e5e5;
     border-color: none;
-    margin-top: 150px;
-    margin-bottom: 0px;
-}
+    margin-bottom: 1000px;
+    margin-top: 200px;
+ }
 
 
 .RESUME {
@@ -562,12 +563,12 @@ ul li a {
     }
 
     .Small {
-        font-size: 20px;
+    font-size: 20px;
     }
 
     .LOGO {
-        height: 200px;
-        width: 200px;
+    height: 200px;
+    width: 200px;
     
 
     }
