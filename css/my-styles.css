@@ -173,6 +173,10 @@ footer {
     margin-right: 40px;
 }
 
+#NAVMENU span {
+    display: none;
+}
+
 .push {
     margin-top: 5px;
     margin-right: 0px;
@@ -673,7 +677,32 @@ a img.social:hover {
 @media screen and (max-width: 740px) {
         
        #NAVMENU {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        text-align: center;
+        background: #000;
         display: none;
+       }
+
+       #NAVMENU .nav-mobile-wrap {
+        height: calc(100vh - 50px);
+        padding: 50px 0;
+       }
+
+       #NAVMENU.push {
+        margin-top: 0;
+       }
+
+       #NAVMENU a {
+        display: inline-block;
+        margin: 20px 0;
+       }
+
+       #NAVMENU span {
+        width: 100%;
+        display: block;
        }
 
        .push {
