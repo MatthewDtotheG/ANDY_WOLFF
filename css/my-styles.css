@@ -6,7 +6,8 @@
 	
 }
 
-body, html {
+body,
+html {
 	background-color: #e5e5e5;
 	height: 100%;
     margin: 0px;
@@ -31,8 +32,8 @@ p{
     line-height: 50px;
 }
 
-p, .call {
-    
+p, 
+.call {
     font-family: 'Open Sans';
     margin: auto;
     text-align: center;
@@ -40,14 +41,19 @@ p, .call {
     line-height: 50px;
 }
 
-.call {
-    margin-bottom: 200px;
+#arrow {
+    margin-bottom: 110px;
+}
+
+.space {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 
 .center {
 	text-align: center;
 	margin-top: 15%;
-	
 
 }
 
@@ -79,20 +85,10 @@ footer {
     opacity: .7;    
 }
 
-#arrow {
-    
-}
 
 
-#still {    
-    margin-top: 100px;
-}
 
-.topics {
-	word-spacing: 117px;
-    left: 0;
-        
-}
+/* VIDEO CONTAINER   ====================*/
 
 
 
@@ -105,14 +101,10 @@ footer {
 }
 
 
-
-
 #Container video {
 	position: absolute;
     left: 50%;
     top: 50%;
-    
-    /* The following will size the video to fit the full container. Not necessary, just nice.*/
     min-width: 100%;
     min-height: 100%;
     -webkit-transform: translate(-50%,-50%);
@@ -130,6 +122,15 @@ footer {
     z-index: 1;
 }
 
+
+/* VIDEO CONTAINER END  ====================*/
+
+
+
+
+
+
+/* NAV MENU =========================== */
 
 
 .sliding-middle-out {
@@ -183,7 +184,11 @@ footer {
 }
 
 
-
+.topics {
+    word-spacing: 117px;
+    left: 0;
+        
+}
 
 
 .N {
@@ -192,13 +197,86 @@ footer {
     font-size: 16px;
 }
 
+/* NAV MENU END =========================== */
 
 
-.space {
-	padding-top: 60px;
-    padding-bottom: 60px;
+
+
+
+
+/* BOUNCE ARROW =========================== */
+
+.blink-image {
+    margin-top: 12%;
+    width: 50px;
 
 }
+
+@-moz-keyframes blink {
+    0% {
+        opacity:0.5;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:0.5;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:0.5;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:0.5;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:0.5;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:0.5;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:0.5;
+    }
+} 
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+
+
+/* BOUNCE ARROW  END=========================== */
+
+
+
+
+
+
+
+/* LOGO =========================== */
+
 
 
 .LOGO {
@@ -207,7 +285,8 @@ footer {
     margin: auto;
     opacity: .2;
     display: block;
-    margin-top: 90px;
+    padding-top: 100px;
+    padding-bottom: 100px;    
 }
 
 
@@ -222,6 +301,7 @@ footer {
 
 
 
+/* LOGO END =========================== */
 
 
 
@@ -233,7 +313,11 @@ footer {
 
 
 
-/* ABOUT PAGE */
+
+
+
+
+/* ABOUT PAGE ===============================*/
 
 .PROFPIC {
     border-radius: 50%;
@@ -304,19 +388,7 @@ a img.social:hover {
 }
 
 
-/* ABOUT PAGE END  */
-
-
-
-
-
-/* CONTACT PAGE */
-
-
-
-
-
-/* CONTACT PAGE END */
+/* ABOUT PAGE END ================================== */
 
 
 
@@ -325,86 +397,6 @@ a img.social:hover {
 
 
 
-/* BOUNCE ARROW */
-
-.blink-image {
-	margin-top: 12%;
-	width: 50px;
-
-}
-
-@-moz-keyframes blink {
-    0% {
-        opacity:0.5;
-    }
-    50% {
-        opacity:0;
-    }
-    100% {
-        opacity:0.5;
-    }
-} 
-
-@-webkit-keyframes blink {
-    0% {
-        opacity: 0.5;
-    }
-    50% {
-        opacity:0;
-    }
-    100% {
-        opacity:0.5;
-    }
-}
-/* IE */
-@-ms-keyframes blink {
-    0% {
-        opacity:0.5;
-    }
-    50% {
-        opacity:0;
-    }
-    100% {
-        opacity:0.5;
-    }
-} 
-/* Opera and prob css3 final iteration */
-@keyframes blink {
-    0% {
-        opacity:0.5;
-    }
-    50% {
-        opacity:0;
-    }
-    100% {
-        opacity:0.5;
-    }
-} 
-.blink-image {
-    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
-    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
-    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
-    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
-}
-
-
-/* BOUNCE ARROW END */
-
-
-
-
-/* 
-.show-nav {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background-color: #e5e5e5;
-  z-index: 9000;
-  text-align: center;
-  display: inline;
-}
-
-*/
 
  
 
@@ -413,7 +405,7 @@ a img.social:hover {
 
 
 
-/* IMAGE GRID */
+/* IMAGE GRID / CONTAINERS ============================*/
 
 
 .rig {
@@ -438,9 +430,6 @@ a img.social:hover {
     padding:0;
     
 }
-
-
-
 
 
         
@@ -521,46 +510,37 @@ a img.social:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 9000px) {
-
-    .rig.CENTER li {
-        width: 50%;
-        margin: auto;
+.rig.CENTER li {
+    width: 50%;
+    margin: auto;
     }
 
-    p, .call {
-        max-width: 66%;
-    }
+p, 
+.call {
+    max-width: 66%;
+    margin-bottom: 100px;
+}
     
 
-    .rig.FOUR li {
+.rig.FOUR li {
 
-        margin-top: 10px;
-        width: 25%;
-
-    }
-
-    .rig li.TOP {
-        
-        width: 100%;
-        margin: auto;
-        display: block;
-        
-    }
-
+    margin-top: 10px;
+    width: 25%;
 
 }
+
+.rig li.TOP {
+        
+    width: 100%;
+    margin: auto;
+    display: block;
+        
+}
+
+/* IMAGE GRID / CONTAINERS END ============================*/
+
+
+
 
 
 
@@ -593,7 +573,7 @@ a img.social:hover {
 }
 
 
-
+/* MOBILE ==================================*/
 
 
 
@@ -672,6 +652,10 @@ a img.social:hover {
     }
 }
 
+
+
+
+/* MOBILE MENU   ====================*/
 
 
 @media screen and (max-width: 740px) {
@@ -789,15 +773,7 @@ a img.social:hover {
     }
 }
 
-
-
-
-
-
-
-
-
-
+/* MOBILE MENU END   ====================*/
 
 
 
@@ -807,12 +783,6 @@ a img.social:hover {
         width:33.33%;
     }
 }
-
-
-
-
-
-
 
 
 
@@ -940,4 +910,4 @@ a img.social:hover {
 
 
 
-
+/* MOBILE END   ====================*/
