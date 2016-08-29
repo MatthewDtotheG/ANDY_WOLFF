@@ -1,5 +1,5 @@
 
-//ANCHOR TAGS
+//ANCHOR TAGS ===============================
 
 $(function(){
     $('a[href^="#"]').on('click',function (e) {
@@ -17,7 +17,7 @@ $(function(){
 });
 
 
-//ANCHOR TAGS END
+//ANCHOR TAGS END ===============================
 
 
 
@@ -29,7 +29,7 @@ $("#lightgallery").lightGallery({
   selector: '.lightgallery-el'
 }); 
 
-// VIDEO GALLERY END
+// VIDEO GALLERY END ===============================
 
 
 
@@ -37,7 +37,7 @@ $("#lightgallery").lightGallery({
 
 
 
-// IMAGE GALLERY
+// IMAGE GALLERY ===============================
 
 $('#FILM').on('click', function() {
  
@@ -101,7 +101,7 @@ $('#RESUME').on('click', function() {
 });
 
 
-// IMAGE GALLERY END
+// IMAGE GALLERY END ===============================
 
 
 
@@ -109,7 +109,7 @@ $('#RESUME').on('click', function() {
 
 
 
-// COLLAPSIBLE NAV MENU
+// COLLAPSIBLE NAV MENU ===============================
 
 
 $(document).ready(function(){
@@ -126,14 +126,14 @@ $('.toggle-nav').click(function() {
 });
 
 
-// COLLAPSIBLE NAV MENU END
+// COLLAPSIBLE NAV MENU END ===============================
 
 
 
 
 
 
-// STICKY HEADER
+// STICKY HEADER ===============================
 
 
 $('.NAV').sticky();
@@ -147,4 +147,4 @@ $('.NAV').on('sticky-end', function () {
  $('.NAV').hide();
 });
 
-// STICKY HEADER END
+// STICKY HEADER END ===============================
