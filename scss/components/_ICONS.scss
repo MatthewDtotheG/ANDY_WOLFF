@@ -1,0 +1,70 @@
+/* ICONS */
+
+/* BOUNCE ARROW =========================== */
+.blink-image {
+  margin-top: 12%;
+  width: 50px; }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+/* IE */
+@-ms-keyframes blink {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+.blink-image {
+  -moz-animation: blink normal 2s infinite ease-in-out;
+  /* Firefox */
+  -webkit-animation: blink normal 2s infinite ease-in-out;
+  /* Webkit */
+  -ms-animation: blink normal 2s infinite ease-in-out;
+  /* IE */
+  animation: blink normal 2s infinite ease-in-out;
+  /* Opera and prob css3 final iteration */ }
+
+/* BOUNCE ARROW  END=========================== */
+
+
+
+/* LOGO =========================== */
+.LOGO {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  opacity: .2;
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.LOGONAV {
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 40px; }
+
+/* LOGO END =========================== */
