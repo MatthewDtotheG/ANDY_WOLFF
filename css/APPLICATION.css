@@ -1,5 +1,8 @@
 /* APPLICATION */
 /* BASE INDEX */
+/* VARIABLES */
+/* Descriptive color variables */
+/* Functional color variabels */
 /* BASE */
 body,
 html {
@@ -43,7 +46,7 @@ p,
 a {
   font-family: 'Open Sans';
   font-size: 20px;
-  color: #f2f2f2;
+  color: #e5e5e5;
   text-decoration: none;
   border-color: none; }
 
@@ -55,12 +58,11 @@ a {
 
 footer {
   margin-top: 0px;
-  background-color: black;
+  background-color: #3f3f3f;
   left: 0px;
   bottom: 0px;
   height: 250px;
-  width: 100%;
-  opacity: .7; }
+  width: 100%; }
 
 /* index */
 /* ABOUT PAGE */
@@ -72,9 +74,8 @@ footer {
   margin: 35px 0px; }
 
 .RESUME:hover {
-  background-color: black;
-  color: #e5e5e5;
-  opacity: .7; }
+  background-color: #3f3f3f;
+  color: #e5e5e5; }
 
 .social {
   height: 30px;
@@ -93,7 +94,7 @@ a img.social:hover {
 /* BOUNCE ARROW =========================== */
 .blink-image {
   margin-top: 12%;
-  width: 50px; }
+  width: 40px; }
 
 @-moz-keyframes blink {
   0% {
@@ -1081,7 +1082,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background: white; }
 
 .NAV {
-  background: black;
+  background: #000;
   opacity: .7;
   text-align: right;
   width: 100%;

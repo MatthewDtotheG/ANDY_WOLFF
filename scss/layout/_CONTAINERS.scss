@@ -40,7 +40,7 @@
   padding: 0;
   font-size: 0;
   list-style: none;
-  background-color: #e5e5e5;
+  background-color: $color-prim;
   border-color: none;
   position: relative; }
 
@@ -115,7 +115,7 @@ p,
   font-size: 0;
   /* Remember to change it back to normal font size if have captions */
   list-style: none;
-  background-color: #e5e5e5;
+  background-color: $color-prim;
   border-color: none;
   margin-bottom: 1000px;
   margin-top: 200px; }
