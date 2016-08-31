@@ -1126,30 +1126,34 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 0; }
 
 #NAVMENU {
-  word-spacing: 35px;
   margin-right: 40px; }
 
 #NAVMENU span {
   display: none; }
 
 .push {
-  margin-top: 5px;
-  margin-right: 0px; }
+  margin-top: 5px; }
 
 .topics {
-  word-spacing: 117px;
-  left: 0; }
+  padding-right: 117px; }
   @media (max-width: 768px) {
     .topics {
-      word-spacing: 72px; } }
+      padding-right: 72px; } }
   @media (max-width: 550px) {
     .topics {
-      word-spacing: 28px; } }
+      padding-right: 28px; } }
 
 .N {
+  margin-right: 0px;
   margin-top: 10px;
   opacity: 1;
   font-size: 16px; }
+
+.P {
+  padding-right: 35px; }
+  @media (max-width: 768px) {
+    .P {
+      padding-right: 0px; } }
 
 /* NAV MENU END =========================== */
 /* INDEX */

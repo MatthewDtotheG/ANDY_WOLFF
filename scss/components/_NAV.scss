@@ -34,7 +34,6 @@
   padding: 0; }
 
 #NAVMENU {
-  word-spacing: 35px;
   margin-right: 40px; }
 
 #NAVMENU span {
@@ -42,24 +41,34 @@
 
 .push {
   margin-top: 5px;
-  margin-right: 0px; }
+   }
 
 .topics {
-  word-spacing: 117px;
-  left: 0; 
+  padding-right: 117px;
+
 
   @media #{$brk-narrow} {
-    word-spacing: 72px; }
+    padding-right: 72px; }
 
   @media #{$brk-small} {
-    word-spacing: 28px; }
+    padding-right: 28px; }
 }
 
 
 .N {
+  margin-right: 0px;
   margin-top: 10px;
   opacity: 1;
-  font-size: 16px; }
+  font-size: 16px;
+}
+
+.P {
+  padding-right: 35px;
+
+  @media #{$brk-narrow} {
+    padding-right: 0px;
+  }
+}
 
 /* NAV MENU END =========================== */
 
