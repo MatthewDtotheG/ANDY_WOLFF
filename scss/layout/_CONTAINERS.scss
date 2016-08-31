@@ -35,14 +35,27 @@
 
 /* IMAGE CONTAINERS  ====================*/
 .rig {
-  max-width: 67%;
+  max-width: 68%;
   margin: auto;
   padding: 0;
   font-size: 0;
   list-style: none;
   background-color: $color-prim;
   border-color: none;
-  position: relative; }
+  position: relative; 
+
+  @media #{$brk-wide} {
+    max-width: 80%;
+  }
+
+  @media #{$brk-narrow} {
+    max-width: 90%; 
+  }
+
+  @media #{$brk-small} {
+    max-width: 100%; 
+  }
+}
 
 .rig li {
   display: inline-block;
@@ -52,7 +65,14 @@
   vertical-align: middle;
   box-sizing: border-box;
   margin: auto;
-  padding: 0; }
+  padding: 0; 
+
+  @media #{$brk-narrow} {
+    width: 33.33%; 
+  }
+
+}
+
 
 .rig.CENTER li {
   width: 50%;
@@ -60,12 +80,26 @@
 
 .rig.FOUR li {
   margin-top: 10px;
-  width: 25%; }
+  width: 25%;
+
+  @media #{$brk-small} {
+    margin-top: 5px;
+    width: 50%; 
+  }
+
+}
 
 .rig li.TOP {
   width: 100%;
   margin: auto;
-  display: block; }
+  display: block;
+
+   @media #{$brk-small} {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+}
 
 /* IMAGE CONTAINERS END  ====================*/
 
@@ -78,7 +112,24 @@
 p,
 .call {
   max-width: 66%;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+
+  @media #{$brk-wide} {
+    max-width: 78%;
+    margin-bottom: 100px;
+  }
+
+  @media #{$brk-narrow} {
+    max-width: 87%;
+  }
+
+  @media #{$brk-small} {
+    max-width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left; }
+}
 
 /* CALL TO ACTION CONTAINER END  ====================*/
 
@@ -94,7 +145,22 @@ p,
   width: 30%;
   float: left;
   position: relative;
-  margin: 10px; }
+  margin: 10px; 
+
+  @media #{$brk-narrow}{
+    width: 45%;
+    float: none;
+    position: relative;
+    display: block;
+    margin: auto; 
+    margin-bottom: 45px;
+  }
+
+  @media #{$brk-small}{
+    margin-bottom: 20px;
+  }
+
+}
 
 .ABOUT {
   position: relative;
@@ -105,10 +171,25 @@ p,
   margin: 10px;
   border-left: 1px solid black;
   padding-left: 35px;
-  margin-right: 0px; }
+  margin-right: 0px;
+
+  @media #{$brk-narrow} {
+    padding-left: 40px;
+    padding-right: 10px;
+    margin-left: 0px;
+    font-size: 16px;
+    width: 90%; 
+  }
+
+  @media #{$brk-small} {
+    padding-left: 25px;
+    width: 89%;  
+  }
+
+}
 
 .rigAbout {
-  max-width: 64%;
+  max-width: 67%;
   margin: auto;
   /*center aligned*/
   padding: 0;
@@ -118,7 +199,21 @@ p,
   background-color: $color-prim;
   border-color: none;
   margin-bottom: 1000px;
-  margin-top: 200px; }
+  margin-top: 200px; 
+
+  @media #{$brk-wide} {
+    max-width: 78%;
+  }
+  @media #{$brk-narrow}{
+    margin-top: 150px;
+    max-width: 87%; }
+
+  @media #{$brk-small} {
+    margin-top: 100px;
+    max-width: 100%; }
+}
+
+
 
 /* ABOUT PAGE CONTAINERS END  ====================*/
 

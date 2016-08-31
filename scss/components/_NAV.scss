@@ -46,7 +46,15 @@
 
 .topics {
   word-spacing: 117px;
-  left: 0; }
+  left: 0; 
+
+  @media #{$brk-narrow} {
+    word-spacing: 72px; }
+
+  @media #{$brk-small} {
+    word-spacing: 28px; }
+}
+
 
 .N {
   margin-top: 10px;
@@ -54,3 +62,8 @@
   font-size: 16px; }
 
 /* NAV MENU END =========================== */
+
+
+
+
+

@@ -3,6 +3,7 @@
 /* VARIABLES */
 /* Descriptive color variables */
 /* Functional color variabels */
+/* MEDIA QUERY BREAKPOINTS */
 /* BASE */
 body,
 html {
@@ -14,15 +15,17 @@ h1 {
   font-family: sans-serif;
   font-size: 100px;
   color: #e5e5e5; }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 70px; } }
+  @media (max-width: 550px) {
+    h1 {
+      font-size: 50px; } }
 
 h2 {
   text-align: center;
   font-family: 'Open Sans';
   font-size: 35px; }
-
-p {
-  font-size: 20px;
-  line-height: 50px; }
 
 p,
 .call {
@@ -42,6 +45,12 @@ p,
 .center {
   text-align: center;
   margin-top: 15%; }
+  @media (max-width: 768px) {
+    .center {
+      margin-top: 28%; } }
+  @media (max-width: 550px) {
+    .center {
+      margin-top: 43%; } }
 
 a {
   font-family: 'Open Sans';
@@ -49,12 +58,9 @@ a {
   color: #e5e5e5;
   text-decoration: none;
   border-color: none; }
-
-.HR {
-  width: 85%;
-  border-top: 1px solid black;
-  margin: auto;
-  margin-top: 110px; }
+  @media (max-width: 768px) {
+    a {
+      font-size: 16px; } }
 
 footer {
   margin-top: 0px;
@@ -65,13 +71,15 @@ footer {
   width: 100%; }
 
 /* index */
-/* ABOUT PAGE */
 /* ABOUT PAGE ===============================*/
 .RESUME {
   color: black;
   border: 1px solid black;
   padding: 10px 84px;
   margin: 35px 0px; }
+  @media (max-width: 768px) {
+    .RESUME {
+      padding: 10px 89px; } }
 
 .RESUME:hover {
   background-color: #3f3f3f;
@@ -95,6 +103,10 @@ a img.social:hover {
 .blink-image {
   margin-top: 12%;
   width: 40px; }
+  @media (max-width: 768px) {
+    .blink-image {
+      margin-top: 25%;
+      width: 35px; } }
 
 @-moz-keyframes blink {
   0% {
@@ -146,6 +158,25 @@ a img.social:hover {
   display: block;
   padding-top: 100px;
   padding-bottom: 100px; }
+  @media (max-width: 1090px) {
+    .LOGO {
+      height: 200px;
+      width: 200px; } }
+  @media (max-width: 768px) {
+    .LOGO {
+      height: 150px;
+      width: 150px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+  @media (max-width: 550px) {
+    .LOGO {
+      height: 100px;
+      width: 100px;
+      margin-top: 40px;
+      padding-top: 30px;
+      padding-bottom: 30px; } }
 
 .LOGONAV {
   height: 40px;
@@ -1108,6 +1139,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .topics {
   word-spacing: 117px;
   left: 0; }
+  @media (max-width: 768px) {
+    .topics {
+      word-spacing: 72px; } }
+  @media (max-width: 550px) {
+    .topics {
+      word-spacing: 28px; } }
 
 .N {
   margin-top: 10px;
@@ -1145,7 +1182,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 /* VIDEO CONTAINER END  ====================*/
 /* IMAGE CONTAINERS  ====================*/
 .rig {
-  max-width: 67%;
+  max-width: 68%;
   margin: auto;
   padding: 0;
   font-size: 0;
@@ -1153,6 +1190,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-color: #e5e5e5;
   border-color: none;
   position: relative; }
+  @media (max-width: 1090px) {
+    .rig {
+      max-width: 80%; } }
+  @media (max-width: 768px) {
+    .rig {
+      max-width: 90%; } }
+  @media (max-width: 550px) {
+    .rig {
+      max-width: 100%; } }
 
 .rig li {
   display: inline-block;
@@ -1163,6 +1209,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   box-sizing: border-box;
   margin: auto;
   padding: 0; }
+  @media (max-width: 768px) {
+    .rig li {
+      width: 33.33%; } }
 
 .rig.CENTER li {
   width: 50%;
@@ -1171,11 +1220,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .rig.FOUR li {
   margin-top: 10px;
   width: 25%; }
+  @media (max-width: 550px) {
+    .rig.FOUR li {
+      margin-top: 5px;
+      width: 50%; } }
 
 .rig li.TOP {
   width: 100%;
   margin: auto;
   display: block; }
+  @media (max-width: 550px) {
+    .rig li.TOP {
+      width: 100%;
+      margin: auto;
+      display: block; } }
 
 /* IMAGE CONTAINERS END  ====================*/
 /* CALL TO ACTION CONTAINER  ====================*/
@@ -1183,6 +1241,23 @@ p,
 .call {
   max-width: 66%;
   margin-bottom: 100px; }
+  @media (max-width: 1090px) {
+    p,
+    .call {
+      max-width: 78%;
+      margin-bottom: 100px; } }
+  @media (max-width: 768px) {
+    p,
+    .call {
+      max-width: 87%; } }
+  @media (max-width: 550px) {
+    p,
+    .call {
+      max-width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: left; } }
 
 /* CALL TO ACTION CONTAINER END  ====================*/
 /* ABOUT PAGE CONTAINERS  ====================*/
@@ -1192,6 +1267,17 @@ p,
   float: left;
   position: relative;
   margin: 10px; }
+  @media (max-width: 768px) {
+    .PROFPIC {
+      width: 45%;
+      float: none;
+      position: relative;
+      display: block;
+      margin: auto;
+      margin-bottom: 45px; } }
+  @media (max-width: 550px) {
+    .PROFPIC {
+      margin-bottom: 20px; } }
 
 .ABOUT {
   position: relative;
@@ -1203,9 +1289,20 @@ p,
   border-left: 1px solid black;
   padding-left: 35px;
   margin-right: 0px; }
+  @media (max-width: 768px) {
+    .ABOUT {
+      padding-left: 40px;
+      padding-right: 10px;
+      margin-left: 0px;
+      font-size: 16px;
+      width: 90%; } }
+  @media (max-width: 550px) {
+    .ABOUT {
+      padding-left: 25px;
+      width: 89%; } }
 
 .rigAbout {
-  max-width: 64%;
+  max-width: 67%;
   margin: auto;
   /*center aligned*/
   padding: 0;
@@ -1216,6 +1313,17 @@ p,
   border-color: none;
   margin-bottom: 1000px;
   margin-top: 200px; }
+  @media (max-width: 1090px) {
+    .rigAbout {
+      max-width: 78%; } }
+  @media (max-width: 768px) {
+    .rigAbout {
+      margin-top: 150px;
+      max-width: 87%; } }
+  @media (max-width: 550px) {
+    .rigAbout {
+      margin-top: 100px;
+      max-width: 100%; } }
 
 /* ABOUT PAGE CONTAINERS END  ====================*/
 /* IMAGE RULES ============================*/
@@ -1280,6 +1388,15 @@ p,
   /*For older IE*/
   transform: translateY(-20px);
   transition: all .3s; }
+  @media (max-width: 1090px) {
+    .rig-text {
+      font-size: 55px; } }
+  @media (max-width: 768px) {
+    .rig-text {
+      font-size: 55px; } }
+  @media (max-width: 550px) {
+    .rig-text {
+      font-size: 45px; } }
 
 .rig li:hover .rig-text {
   transform: translateY(0px);
@@ -1287,83 +1404,13 @@ p,
 
 .Small {
   font-size: 20px; }
+  @media (max-width: 768px) {
+    .Small {
+      font-size: 16px; } }
 
 /* IMAGE RULES  END ============================*/
-/* MOBILE */
-@media (max-width: 1090px) {
-  .rig-text {
-    font-size: 55px; }
-
-  .Small {
-    font-size: 20px; }
-
-  .LOGO {
-    height: 200px;
-    width: 200px; }
-
-  .rigAbout {
-    max-width: 68%; }
-
-  .rig {
-    max-width: 70%; } }
-/* MOBILE ==================================*/
-@media (max-width: 768px) {
-  /* TOP OF SITE */
-  h1 {
-    font-size: 70px; }
-
-  a {
-    font-size: 16px; }
-
-  .center {
-    margin-top: 28%; }
-
-  .topics {
-    word-spacing: 72px; }
-
-  .blink-image {
-    margin-top: 25%;
-    width: 35px; }
-
-  /* TOP OF SITE END */
-  .rig li {
-    width: 33.33%; }
-
-  .rig-text {
-    font-size: 55px; }
-
-  p, .ABOUT {
-    font-size: 16px; }
-
-  p, .rigAbout {
-    max-width: 87%; }
-
-  .rigAbout {
-    margin-top: 150px; }
-
-  .rig {
-    max-width: 90%; }
-
-  .LOGO {
-    height: 150px;
-    width: 150px;
-    margin: auto;
-    opacity: .2;
-    display: block;
-    margin-top: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px; }
-
-  .RESUME {
-    padding: 10px 89px; }
-
-  #still {
-    margin-top: 60px; }
-
-  .Small {
-    font-size: 16px; } }
 /* MOBILE MENU   ====================*/
-@media screen and (max-width: 740px) {
+@media (max-width: 768px) {
   #NAVMENU {
     width: 100%;
     position: absolute;
@@ -1458,95 +1505,5 @@ p,
     width: 0%;
     left: 50%; } }
 /* MOBILE MENU END   ====================*/
-@media (max-width: 700px) {
-  .rig li {
-    width: 33.33%; } }
-@media (max-width: 550px) {
-  .rig.CENTER li {
-    width: 50%;
-    margin: auto; }
-
-  p, .call {
-    max-width: 66%;
-    line-height: 30px;
-    text-align: left; }
-
-  .rig.FOUR li {
-    margin-top: 5px;
-    width: 50%; }
-
-  .rig li.TOP {
-    width: 100%;
-    margin: auto;
-    display: block; }
-
-  /* TOP OF SITE */
-  h1 {
-    font-size: 50px; }
-
-  a {
-    font-size: 16px; }
-
-  .center {
-    margin-top: 43%; }
-
-  .topics {
-    word-spacing: 28px; }
-
-  .blink-image {
-    margin-top: 25%;
-    width: 35px; }
-
-  /* TOP OF SITE END */
-  .rig li {
-    width: 33.33%; }
-
-  .rig-text {
-    font-size: 45px; }
-
-  p, .ABOUT {
-    font-size: 16px;
-    padding-left: 25px;
-    padding-right: 10px;
-    margin-left: 0px;
-    width: 87%; }
-
-  p, .rigAbout {
-    max-width: 100%; }
-
-  .rigAbout {
-    margin-top: 100px; }
-
-  .rig {
-    max-width: 100%; }
-
-  .LOGO {
-    height: 100px;
-    width: 100px;
-    margin: auto;
-    opacity: .2;
-    display: block;
-    margin-top: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px; }
-
-  .PROFPIC {
-    width: 45%;
-    float: none;
-    position: relative;
-    margin: 10px;
-    display: block;
-    margin: auto;
-    margin-bottom: 20px; }
-
-  .RESUME {
-    padding: 10px 89px; }
-
-  #still {
-    margin-top: 50px; }
-
-  .Small {
-    font-size: 16px; } }
-/* MOBILE END   ====================*/
 
 /*# sourceMappingURL=APPLICATION.css.map */

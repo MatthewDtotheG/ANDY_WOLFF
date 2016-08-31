@@ -16,3 +16,9 @@ $color-sec		:	$mine-Shaft;
 $color-text-light	:	$mercury;
 $color-text-dark	:	$black;
 
+
+/* MEDIA QUERY BREAKPOINTS */
+
+$brk-small  :	'(max-width: 550px)';
+$brk-narrow	:	'(max-width: 768px)';
+$brk-wide	:	'(max-width: 1090px)';

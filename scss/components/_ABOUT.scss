@@ -1,5 +1,3 @@
-/* ABOUT PAGE */
-
 /* ABOUT PAGE ===============================*/
 
 
@@ -7,7 +5,13 @@
   color: black;
   border: 1px solid black;
   padding: 10px 84px;
-  margin: 35px 0px; }
+  margin: 35px 0px;
+
+  @media #{$brk-narrow} {
+    padding: 10px 89px;
+  }
+
+  }
 
 .RESUME:hover {
   background-color: $color-sec;
