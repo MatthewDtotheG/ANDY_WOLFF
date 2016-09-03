@@ -33,10 +33,6 @@ $("#lightgallery").lightGallery({
 
 
 
-
-
-
-
 // IMAGE GALLERY ===============================
 
 $('#FILM').on('click', function() {
