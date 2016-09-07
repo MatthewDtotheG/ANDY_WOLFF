@@ -28,8 +28,7 @@ h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 35px; }
 
-p,
-.call {
+p {
   font-family: "Open Sans", sans-serif;
   margin: auto;
   text-align: center;
@@ -52,6 +51,11 @@ p,
   @media (max-width: 550px) {
     .center {
       margin-top: 43%; } }
+
+.copy {
+  color: #e5e5e5;
+  padding-top: 10px;
+  margin: auto; }
 
 a {
   font-family: "Open Sans", sans-serif;
@@ -186,6 +190,14 @@ a img.social:hover {
   margin-top: 5px;
   margin-bottom: 0px;
   margin-left: 40px; }
+
+.LOGOFOOTER {
+  height: 40px;
+  width: 40px;
+  display: block;
+  margin: auto;
+  padding-top: 80px;
+  margin-bottom: 0px; }
 
 /* LOGO END =========================== */
 @font-face {
