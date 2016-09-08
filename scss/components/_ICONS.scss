@@ -6,8 +6,12 @@
   width: 40px;
 
   @media #{$brk-narrow} {
+    margin-top: 15%;
+    width: 25px; }
+
+  @media #{$brk-small} {
     margin-top: 25%;
-    width: 35px; }
+    width: 25px; }
 }
 
 @-moz-keyframes blink {
@@ -98,8 +102,42 @@
   width: 40px;
   display: block;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 60px;
   margin-bottom: 0px;
   }
+
+.NAME {
+
+  @media #{$brk-narrow}{
+    height: 143px;
+    width: 480px; }
+
+   @media #{$brk-small} {
+    height: 102px;
+    width: 340px;
+  }  
+}
+
+.PLAY {
+  width: 0; 
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent; 
+  border-left: 60px solid $color-text-white;
+  margin: auto;
+  display: block;
+}
+
+.PLAYSMALL{ 
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent; 
+  border-left: 30px solid $color-text-white;
+  margin: auto;
+  display: block;
+}
+
+
 
 /* LOGO END =========================== */

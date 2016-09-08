@@ -44,23 +44,25 @@ p {
 
 .center {
   text-align: center;
-  margin-top: 15%; }
+  margin-top: 7%; }
   @media (max-width: 768px) {
     .center {
-      margin-top: 28%; } }
+      margin-top: 13%; } }
   @media (max-width: 550px) {
     .center {
-      margin-top: 43%; } }
+      margin-top: 30%; } }
 
 .copy {
   color: #e5e5e5;
   padding-top: 10px;
-  margin: auto; }
+  font-size: 14px;
+  margin: auto;
+  text-align: center; }
 
 a {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  color: #e5e5e5;
+  color: #FFFFFF;
   text-decoration: none;
   border-color: none; }
   @media (max-width: 768px) {
@@ -72,7 +74,7 @@ footer {
   background-color: #3f3f3f;
   left: 0px;
   bottom: 0px;
-  height: 250px;
+  height: 200px;
   width: 100%; }
 
 /* index */
@@ -110,8 +112,12 @@ a img.social:hover {
   width: 40px; }
   @media (max-width: 768px) {
     .blink-image {
+      margin-top: 15%;
+      width: 25px; } }
+  @media (max-width: 550px) {
+    .blink-image {
       margin-top: 25%;
-      width: 35px; } }
+      width: 25px; } }
 
 @-moz-keyframes blink {
   0% {
@@ -196,8 +202,35 @@ a img.social:hover {
   width: 40px;
   display: block;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 60px;
   margin-bottom: 0px; }
+
+@media (max-width: 768px) {
+  .NAME {
+    height: 143px;
+    width: 480px; } }
+@media (max-width: 550px) {
+  .NAME {
+    height: 102px;
+    width: 340px; } }
+
+.PLAY {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 60px solid #FFFFFF;
+  margin: auto;
+  display: block; }
+
+.PLAYSMALL {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 30px solid #FFFFFF;
+  margin: auto;
+  display: block; }
 
 /* LOGO END =========================== */
 @font-face {
@@ -1340,6 +1373,7 @@ p,
   @media (max-width: 550px) {
     .rigAbout {
       margin-top: 100px;
+      margin-bottom: 600px;
       max-width: 100%; } }
 
 /* ABOUT PAGE CONTAINERS END  ====================*/
