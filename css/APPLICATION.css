@@ -79,16 +79,27 @@ footer {
 
 /* index */
 /* ABOUT PAGE ===============================*/
-.RESUME {
+.RESUME,
+.SUBMIT {
   color: black;
   border: 1px solid black;
   padding: 10px 84px;
   margin: 35px 0px; }
   @media (max-width: 768px) {
-    .RESUME {
+    .RESUME,
+    .SUBMIT {
       padding: 10px 89px; } }
 
+.SUBMIT {
+  background-color: #e5e5e5;
+  box-sizing: none;
+  font-size: 20px; }
+
 .RESUME:hover {
+  background-color: #3f3f3f;
+  color: #e5e5e5; }
+
+.SUBMIT:hover {
   background-color: #3f3f3f;
   color: #e5e5e5; }
 
@@ -103,6 +114,12 @@ a img.social:hover {
 
 .A {
   margin-bottom: 20px; }
+
+.FORM {
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif; }
 
 /* ABOUT PAGE END ================================== */
 /* ICONS */
@@ -1354,10 +1371,7 @@ p,
 .rigAbout {
   max-width: 67%;
   margin: auto;
-  /*center aligned*/
   padding: 0;
-  font-size: 0;
-  /* Remember to change it back to normal font size if have captions */
   list-style: none;
   background-color: #e5e5e5;
   border-color: none;

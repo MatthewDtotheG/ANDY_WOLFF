@@ -191,15 +191,13 @@
 .rigAbout {
   max-width: 67%;
   margin: auto;
-  /*center aligned*/
   padding: 0;
-  font-size: 0;
-  /* Remember to change it back to normal font size if have captions */
   list-style: none;
   background-color: $color-prim;
   border-color: none;
   margin-bottom: 1000px;
-  margin-top: 200px; 
+  margin-top: 200px;
+  
 
   @media #{$brk-wide} {
     max-width: 78%;

@@ -1,7 +1,8 @@
 /* ABOUT PAGE ===============================*/
 
 
-.RESUME {
+.RESUME, 
+.SUBMIT {
   color: black;
   border: 1px solid black;
   padding: 10px 84px;
@@ -13,7 +14,18 @@
 
   }
 
+.SUBMIT {
+    background-color: $color-prim;
+    box-sizing: none;
+    font-size: 20px;  
+}
+
 .RESUME:hover {
+  background-color: $color-sec;
+  color: $color-text-light;
+   }
+
+.SUBMIT:hover {
   background-color: $color-sec;
   color: $color-text-light;
    }
@@ -29,5 +41,12 @@ a img.social:hover {
 
 .A {
   margin-bottom: 20px; }
+
+.FORM {
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  font-family: $stack-open-sans;
+}
 
 /* ABOUT PAGE END ================================== */
