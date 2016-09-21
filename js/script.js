@@ -7,17 +7,28 @@ $(function(){
 
       var target = this.hash;
       var $target = $(target);
+      var windowWidth = $(window).width();
 
       $('html, body').stop().animate({
           'scrollTop': $target.offset().top
       }, 900, 'swing', function () {
           window.location.hash = target;
       });
+      
+      if(windowWidth < 768){
+        $('#nav-icon3').removeClass('open')
+        $('#NAVMENU').fadeOut(300)
+     }
   });
 });
 
 
+
 //ANCHOR TAGS END ===============================
+
+
+
+
 
 
 
@@ -39,19 +50,49 @@ $('#FILM').on('click', function() {
  
     $(this).lightGallery({
         download: false,
-        hideBarsDelay: 3000,
+        hideBarsDelay: 1000,
         enableTouch: true,
         dynamic: true,
         dynamicEl: [{
-            "src": 'img/1A.jpg',
+            "src": 'img/F1.jpg',
         }, {
-            'src': 'img/120.jpg',
+            'src': 'img/F2.jpg',
         }, 
             {
-            'src': 'img/111.jpg',
+            'src': 'img/F3.jpg',
         },
         {
-            'src': 'img/4.jpg',
+            'src': 'img/F4.jpg',
+        },
+        {
+            'src': 'img/F5.jpg',
+        },
+        {
+            'src': 'img/F6.jpg',
+        },
+        {
+            'src': 'img/F7.jpg',
+        },
+        {
+            'src': 'img/F8.jpg',
+        },
+        {
+            'src': 'img/F9.jpg',
+        },
+        {
+            'src': 'img/F10.jpg',
+        },
+        {
+            'src': 'img/F11.jpg',
+        },
+        {
+            'src': 'img/F12.jpg',
+        },
+        {
+            'src': 'img/F13.jpg',
+        },
+        {
+            'src': 'img/F14.jpg',
         }]
     })
  
@@ -64,17 +105,53 @@ $('#DIGITAL').on('click', function() {
     $(this).lightGallery({
         
         download: false,
-        hideBarsDelay: 3000,
+        hideBarsDelay: 1000,
         enableTouch: true,
         dynamic: true,
         dynamicEl: [{
-            "src": 'img/09.jpg',
+            "src": 'img/D1.jpg',
         }, 
             {
-            'src': 'img/111.jpg',
+            'src': 'img/D2.jpg',
+            },
+            {
+            'src': 'img/D3.jpg',
+            },
+            {
+            'src': 'img/D4.jpg',
+            },
+            {
+            'src': 'img/D5.jpg',
+            },
+            {
+            'src': 'img/D6.jpg',
+            },
+            {
+            'src': 'img/D7.jpg',
+            },
+            {
+            'src': 'img/D8.jpg',
+            },
+            {
+            'src': 'img/D9.jpg',
+            },
+            {
+            'src': 'img/D10.jpg',
+            },
+            {
+            'src': 'img/D11.jpg',
+            },
+            {
+            'src': 'img/D12.jpg',
+            },
+            {
+            'src': 'img/D13.jpg',
+            },
+            {
+            'src': 'img/D14.jpg',
             },
         {
-            'src': 'img/44.jpg',
+            'src': 'img/D15.jpg',
         }]
     })
  
@@ -115,10 +192,8 @@ $(document).ready(function(){
 });
 
 
-
-
-$('.toggle-nav').click(function() {
-    $('#NAVMENU').slideToggle(250);
+$('#nav-icon3').click(function() {
+    $('#NAVMENU').fadeToggle(300);
 });
 
 
@@ -140,7 +215,7 @@ $('.NAV').on('sticky-start', function () {
 });
 
 $('.NAV').on('sticky-end', function () {
- $('.NAV').hide();
+ $('.NAV').fadeOut(200);
 });
 
 // STICKY HEADER END ===============================

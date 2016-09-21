@@ -17,7 +17,82 @@
 .SUBMIT {
     background-color: $color-prim;
     box-sizing: none;
-    font-size: 20px;  
+    font-size: 20px;
+    }
+
+.float1 {
+  float: left;
+  margin-right: 35px;
+
+  @media #{$brk-narrow} {
+    float: none;
+    width: 100%;
+    margin: auto;  
+  }
+}
+/*
+float: left;
+float: right;
+
+*/
+.float2 {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  margin-top: -27px;
+
+  @media #{$brk-narrow} {
+    float: none;
+    width: 100%;  
+  }
+}
+
+.FORM {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 600px;
+  margin-top: 600px;
+  display: block;
+  font-size: 20px;
+  font-family: $stack-open-sans;
+
+  @media only screen and (max-width: 3500px) {
+    width: 60%;  
+  }
+
+  @media #{$brk-maxwidth} {
+    width: 80%;
+  }
+
+  @media #{$brk-wide} {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 935px) {
+    width: 90%;  
+  }
+
+   @media #{$brk-fix} {
+    width: 100%;  
+  }
+
+  @media #{brk-narrow}{
+    padding-left: 40px;
+  }
+  
+  
+}
+
+.MESSAGE {
+  width: 350px;
+  height: 142px;
+  padding: 10px;
+  padding-left: 5px;
+  margin: 20px 0px;
+  
+  @media only screen and (max-width: 1230px) {
+  width: 320px;  
+  }
 }
 
 .RESUME:hover {
@@ -42,11 +117,6 @@ a img.social:hover {
 .A {
   margin-bottom: 20px; }
 
-.FORM {
-  margin: auto;
-  display: block;
-  font-size: 20px;
-  font-family: $stack-open-sans;
-}
+
 
 /* ABOUT PAGE END ================================== */

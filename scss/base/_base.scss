@@ -30,7 +30,12 @@ p {
   margin: auto;
   text-align: center;
   font-size: 20px;
-  line-height: 50px; }
+  line-height: 50px; 
+
+  @media #{$brk-fix} {
+    font-size: 16px;  
+  }
+}
 
 #arrow {
   margin-bottom: 110px; }
@@ -41,13 +46,13 @@ p {
 
 .center {
   text-align: center;
-  margin-top: 7%; 
+  margin-top: 10%; 
 
   @media #{$brk-narrow}{
     margin-top: 13%; }
 
   @media #{$brk-small}{
-    margin-top: 30%; }  
+    margin-top: 50%; }  
 
 }
 
@@ -71,6 +76,42 @@ a {
 }
 
 
+
+input, 
+textarea {
+  background-color: $color-prim;
+  border: 1px solid black;
+  padding: 10px;
+  padding-left: 5px;
+  margin: 20px 0px;
+  font: 20px $stack-open-sans;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+}
+
+
+
+input:focus,
+textarea:focus {
+    outline: none !important;
+    border:1px solid black;
+    box-shadow: 0 0 10px none;
+    background-color: $color-sec;
+    color: $color-text-light;
+}
+
+form {
+  display: block;
+  
+}
+
+
 footer {
   margin-top: 0px;
   background-color: $color-sec;
@@ -78,6 +119,7 @@ footer {
   bottom: 0px;
   height: 200px;
   width: 100%;
+
   
   }
 

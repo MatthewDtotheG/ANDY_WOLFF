@@ -158,7 +158,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
+  ;
 }
 .lg-toolbar .lg-icon {
   color: #999;
@@ -890,7 +890,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   transition: opacity 0.15s ease 0s;
 }
 .lg-backdrop.in {
-  opacity: .8;
+  opacity: .9;
 }
 
 .lg-css3.lg-no-trans .lg-prev-slide, .lg-css3.lg-no-trans .lg-next-slide, .lg-css3.lg-no-trans .lg-current {
