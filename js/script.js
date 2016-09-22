@@ -36,11 +36,11 @@ $(function(){
 
 $("#lightgallery").lightGallery({
   enableTouch: true,
+  hideBarsDelay: 900,
   selector: '.lightgallery-el'
 }); 
 
 // VIDEO GALLERY END ===============================
-
 
 
 // IMAGE GALLERY ===============================
@@ -49,7 +49,7 @@ $('#FILM').on('click', function() {
  
     $(this).lightGallery({
         download: false,
-        hideBarsDelay: 1000,
+        hideBarsDelay: 500,
         enableTouch: true,
         dynamic: true,
         dynamicEl: [{
@@ -104,7 +104,7 @@ $('#DIGITAL').on('click', function() {
     $(this).lightGallery({
         
         download: false,
-        hideBarsDelay: 1000,
+        hideBarsDelay: 800,
         enableTouch: true,
         dynamic: true,
         dynamicEl: [{
