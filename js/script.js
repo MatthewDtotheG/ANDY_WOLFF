@@ -15,7 +15,7 @@ $(function(){
           window.location.hash = target;
       });
       
-      if(windowWidth < 768){
+      if(windowWidth < 769){
         $('#nav-icon3').removeClass('open')
         $('#NAVMENU').fadeOut(300)
      }
@@ -25,7 +25,6 @@ $(function(){
 
 
 //ANCHOR TAGS END ===============================
-
 
 
 

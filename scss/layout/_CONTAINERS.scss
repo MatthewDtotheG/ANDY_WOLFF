@@ -187,8 +187,14 @@
   }
 
   @media #{$brk-small} {
-    padding-left: 25px;
-    width: 89%;  
+    padding-left: 0px;
+    padding: 0px;
+    width: 95%;
+    border-left: 0px;
+    float: none;  
+    margin: auto;
+    text-align: center;
+
   }
 
 }
@@ -217,8 +223,8 @@
     margin-bottom: 750px; }
 
   @media #{$brk-small} {
-    margin-top: 100px;
-    margin-bottom: 600px;
+    margin-top: 170px;
+    margin-bottom: 300px;
     max-width: 100%; }
 }
 

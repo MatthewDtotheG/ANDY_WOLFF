@@ -120,6 +120,11 @@ footer {
     .RESUME,
     .SUBMIT {
       padding: 10px 89px; } }
+  @media (max-width: 550px) {
+    .RESUME,
+    .SUBMIT {
+      text-align: center;
+      float: none; } }
 
 .SUBMIT {
   background-color: #e5e5e5;
@@ -195,11 +200,24 @@ float: right;
   background-color: #3f3f3f;
   color: #e5e5e5; }
 
+@media (max-width: 550px) {
+  .ABOUTWRAP {
+    text-align: left;
+    float: left;
+    margin-bottom: 55px; } }
+
 .social {
   height: 30px;
   width: 30px;
   margin-right: 20px;
   margin-top: 30px; }
+
+.SocialWrap {
+  float: none;
+  text-align: center; }
+  @media (max-width: 550px) {
+    .SocialWrap {
+      margin-left: 20px; } }
 
 a img.social:hover {
   opacity: .5; }
@@ -322,7 +340,7 @@ a img.social:hover {
   height: 0;
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
-  border-left: 60px solid #FFFFFF;
+  border-left: 60px solid #d9d9d9;
   margin: auto;
   display: block; }
 
@@ -331,7 +349,7 @@ a img.social:hover {
   height: 0;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 30px solid #FFFFFF;
+  border-left: 30px solid #d9d9d9;
   margin: auto;
   display: block; }
 
@@ -1454,8 +1472,13 @@ p,
       width: 90%; } }
   @media (max-width: 550px) {
     .ABOUT {
-      padding-left: 25px;
-      width: 89%; } }
+      padding-left: 0px;
+      padding: 0px;
+      width: 95%;
+      border-left: 0px;
+      float: none;
+      margin: auto;
+      text-align: center; } }
 
 .rigAbout {
   max-width: 67%;
@@ -1476,16 +1499,14 @@ p,
       margin-bottom: 750px; } }
   @media (max-width: 550px) {
     .rigAbout {
-      margin-top: 100px;
-      margin-bottom: 600px;
+      margin-top: 170px;
+      margin-bottom: 300px;
       max-width: 100%; } }
 
 /* ABOUT PAGE CONTAINERS END  ====================*/
 /* IMAGE RULES ============================*/
 /* The wrapper for each item */
 .rig-cell {
-  /*margin:12px;
-  box-shadow:0 0 6px rgba(0,0,0,0.3);*/
   display: block;
   position: relative;
   overflow: hidden;
@@ -1503,7 +1524,7 @@ p,
 .rig li:hover .rig-img {
   transform: scale(1.05); }
 
-/* If have the overlay layer */
+/* GRAYS OUT THE IMAGE */
 .rig-overlay {
   position: absolute;
   display: block;
@@ -1522,7 +1543,7 @@ p,
 .rig li:hover .rig-overlay {
   opacity: 0.5; }
 
-/* If have captions */
+/* PULLS IN THE TEXT / ICON */
 .rig-text {
   display: block;
   padding: 0px;
@@ -1557,12 +1578,17 @@ p,
   transform: translateY(0px);
   opacity: 0.9; }
 
-.Small {
-  font-size: 20px; }
-  @media (max-width: 768px) {
-    .Small {
-      font-size: 16px; } }
+@media only screen and (max-width: 768px) {
+  .rig li .rig-text {
+    transform: none;
+    opacity: .7;
+    color: #3f3f3f; }
 
+  .rig li:hover .rig-overlay {
+    display: none; }
+
+  .rig li:hover .rig-img {
+    transform: scale(1); } }
 /* IMAGE RULES  END ============================*/
 /* MOBILE MENU   ====================*/
 @media (max-width: 768px) {
@@ -1591,6 +1617,9 @@ p,
     margin: 35px 0;
     color: black;
     font-size: 20px; }
+
+  #NAVMENU a:hover {
+    opacity: .4; }
 
   #NAVMENU .sliding-middle-out:after {
     display: none; }
