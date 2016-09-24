@@ -22,7 +22,27 @@ h1 {
 h2 {
   text-align: center;
   font-family: $stack-open-sans;
-  font-size: 35px; }
+  font-size: 25px;
+  line-height: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+
+  @media #{$brk-narrow}{
+    font-size: 18px;
+    line-height: 50px; 
+    }
+
+  @media #{$brk-small}{
+    font-size: 18px; 
+    line-height: 40px;
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    } 
+   }
 
 
 p {
@@ -33,7 +53,7 @@ p {
   line-height: 50px; 
 
   @media #{$brk-fix} {
-    font-size: 16px;  
+    font-size: 18px;  
   }
 }
 
@@ -55,6 +75,21 @@ p {
     margin-top: 35%; }  
 
 }
+
+hr {
+  width: 50%;
+}
+
+.MBG {
+  z-index: 40;
+}
+
+.BBG {
+  z-index: 80
+}
+
+
+
 
 .copy {
   color: $color-text-light;

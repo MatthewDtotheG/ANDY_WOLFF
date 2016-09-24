@@ -26,7 +26,23 @@ h1 {
 h2 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 35px; }
+  font-size: 25px;
+  line-height: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 18px;
+      line-height: 50px; } }
+  @media (max-width: 550px) {
+    h2 {
+      font-size: 18px;
+      line-height: 40px;
+      text-align: center;
+      margin-left: 12px;
+      margin-right: 12px;
+      padding-top: 60px;
+      padding-bottom: 60px; } }
 
 p {
   font-family: "Open Sans", sans-serif;
@@ -36,7 +52,7 @@ p {
   line-height: 50px; }
   @media (max-width: 850px) {
     p {
-      font-size: 16px; } }
+      font-size: 18px; } }
 
 #arrow {
   margin-bottom: 110px; }
@@ -54,6 +70,15 @@ p {
   @media (max-width: 550px) {
     .center {
       margin-top: 35%; } }
+
+hr {
+  width: 50%; }
+
+.MBG {
+  z-index: 40; }
+
+.BBG {
+  z-index: 80; }
 
 .copy {
   color: #e5e5e5;
@@ -316,7 +341,10 @@ a img.social:hover {
   float: left;
   margin-top: 5px;
   margin-bottom: 0px;
-  margin-left: 15px; }
+  margin-left: 35px; }
+  @media (max-width: 768px) {
+    .LOGONAV {
+      margin-left: 15px; } }
 
 .LOGOFOOTER {
   height: 40px;
@@ -1376,7 +1404,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       max-width: 90%; } }
   @media (max-width: 550px) {
     .rig {
-      max-width: 100%; } }
+      max-width: 98%; } }
 
 .rig li {
   display: inline-block;

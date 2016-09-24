@@ -6,7 +6,8 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  background-color: black; }
+  background-color: black;
+   }
 
 #Container video {
   position: absolute;
@@ -29,9 +30,10 @@
 
 @media all  and (max-width : 768px) {
 
-video{
+video {
     display:none;
     }
+
 } 
 
 /* VIDEO CONTAINER END 
@@ -65,7 +67,7 @@ video{
   }
 
   @media #{$brk-small} {
-    max-width: 100%; 
+    max-width: 98%; 
   }
 }
 
