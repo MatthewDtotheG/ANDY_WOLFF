@@ -69,7 +69,7 @@ p {
   margin-top: 6%; 
 
   @media #{$brk-narrow}{
-    margin-top: 13%; }
+    margin-top: 33%; }
 
   @media #{$brk-small}{
     margin-top: 35%; }  
@@ -79,16 +79,6 @@ p {
 hr {
   width: 50%;
 }
-
-.MBG {
-  z-index: 40;
-}
-
-.BBG {
-  z-index: 80
-}
-
-
 
 
 .copy {

@@ -89,9 +89,6 @@ $('#FILM').on('click', function() {
         },
         {
             'src': 'img/F13.jpg',
-        },
-        {
-            'src': 'img/F14.jpg',
         }]
     })
  
@@ -148,9 +145,6 @@ $('#DIGITAL').on('click', function() {
             },
             {
             'src': 'img/D14.jpg',
-            },
-        {
-            'src': 'img/D15.jpg',
         }]
     })
  
