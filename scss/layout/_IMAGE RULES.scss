@@ -83,6 +83,10 @@
     font-size: 45px;
   }
 
+   @media #{$brk-xsmall} {
+    font-size: 35px;
+  }
+
 }
 
 .rig li:hover .rig-text {

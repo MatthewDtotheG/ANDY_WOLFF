@@ -120,7 +120,12 @@
    @media #{$brk-small} {
     height: 102px;
     width: 340px;
-  }  
+  }
+
+  @media #{$brk-xsmall} {
+    height: 102px;
+    width: 300px;
+  }   
 }
 
 .PLAY {

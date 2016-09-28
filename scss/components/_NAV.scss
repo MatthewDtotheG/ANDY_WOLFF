@@ -51,7 +51,11 @@
     padding-right: 72px; }
 
   @media #{$brk-small} {
-    padding-right: 28px; }
+    padding-right: 28px; 
+  }
+  @media #{$brk-xsmall} {
+    padding-right: 18px; 
+  }
 }
 
 

@@ -356,6 +356,10 @@ a img.social:hover {
   .NAME {
     height: 102px;
     width: 340px; } }
+@media (max-width: 320px) {
+  .NAME {
+    height: 102px;
+    width: 300px; } }
 
 .PLAY {
   width: 0;
@@ -1330,6 +1334,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   @media (max-width: 550px) {
     .topics {
       padding-right: 28px; } }
+  @media (max-width: 320px) {
+    .topics {
+      padding-right: 18px; } }
 
 .N {
   margin-right: 0px;
@@ -1612,6 +1619,9 @@ p,
   @media (max-width: 550px) {
     .rig-text {
       font-size: 45px; } }
+  @media (max-width: 320px) {
+    .rig-text {
+      font-size: 35px; } }
 
 .rig li:hover .rig-text {
   transform: translateY(0px);
