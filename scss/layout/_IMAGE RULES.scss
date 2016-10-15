@@ -10,7 +10,12 @@
   display: block;
   position: relative;
   overflow: hidden;
-  margin: 10px; }
+  margin: 10px; 
+
+  @media #{$brk-small} {
+    margin: 0px;
+  }
+}
 
 /* If have the image layer */
 .rig-img {
@@ -58,9 +63,9 @@
   width: 100%;
   text-align: center;
   text-transform: capitalize;
-  font-size: 75px;
+  font-size: 45px;
   font-weight: bold;
-  font-family: $stack-open-sans;
+  font-family: $stack-muli;
   font-weight: normal !important;
   top: 40%;
   color: white;
@@ -71,20 +76,26 @@
   transition: all .3s; 
 
   @media #{$brk-wide} {
-    font-size: 55px;
-  }
-
-  @media #{$brk-narrow} {
-    font-size: 55px;
-    top: 38%;
-  }
-
-   @media #{$brk-small} {
     font-size: 45px;
   }
 
+  @media #{$brk-narrow} {
+    font-size: 30px;
+    padding: 10px;
+    top: 30%;
+    background: rgba(black, 0.4)
+  }
+
+   @media #{$brk-small} {
+    
+    padding: 15px;
+    font-size: 25px;
+    background: rgba(black, 0.4);
+    
+  }
+
    @media #{$brk-xsmall} {
-    font-size: 35px;
+    font-size: 25px;
   }
 
 }
@@ -95,14 +106,28 @@
  
  }
 
+ .Small {
+  font-size: 20px;
+
+  @media #{$brk-narrow} {
+    font-size: 30px;
+    
+  }
+
+  @media #{$brk-small} {
+    font-size: 25px;
+  }
+
+ }
+
  
 
 @media only screen and (max-width: 768px) {
   
   .rig li .rig-text {
     transform: none;
-    opacity: .7;
-    color: #3f3f3f;
+    opacity: .9;
+    color: white;
 
   }
 

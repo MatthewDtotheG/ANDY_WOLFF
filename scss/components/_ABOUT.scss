@@ -61,7 +61,7 @@ float: right;
   margin-top: 600px;
   display: block;
   font-size: 20px;
-  font-family: $stack-open-sans;
+  font-family: $stack-muli;
 
   @media only screen and (max-width: 3500px) {
     width: 60%;  
@@ -75,16 +75,19 @@ float: right;
     width: 80%;
   }
 
-  @media only screen and (max-width: 935px) {
-    width: 90%;  
-  }
+  
 
-   @media #{$brk-fix} {
+  @media #{$brk-fix} {
     width: 100%;  
   }
 
-  @media #{brk-narrow}{
+  @media #{brk-narrow} {
     padding-left: 40px;
+  }
+
+  @media #{brk-small}{
+    padding-left: 40px;
+    width: 90%;
   }
   
   

@@ -25,7 +25,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 25px;
   line-height: 60px;
   padding-top: 80px;
@@ -45,7 +45,7 @@ h2 {
       padding-bottom: 60px; } }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   margin: auto;
   text-align: center;
   font-size: 20px;
@@ -82,7 +82,7 @@ hr {
   text-align: center; }
 
 a {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 20px;
   color: #FFFFFF;
   text-decoration: none;
@@ -98,7 +98,7 @@ textarea {
   padding: 10px;
   padding-left: 5px;
   margin: 20px 0px;
-  font: 20px "Open Sans", sans-serif;
+  font: 20px "Muli", sans-serif;
   text-rendering: auto;
   color: initial;
   letter-spacing: normal;
@@ -181,7 +181,7 @@ float: right;
   margin-top: 600px;
   display: block;
   font-size: 20px;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Muli", sans-serif; }
   @media only screen and (max-width: 3500px) {
     .FORM {
       width: 60%; } }
@@ -191,15 +191,16 @@ float: right;
   @media (max-width: 1093px) {
     .FORM {
       width: 80%; } }
-  @media only screen and (max-width: 935px) {
-    .FORM {
-      width: 90%; } }
   @media (max-width: 850px) {
     .FORM {
       width: 100%; } }
   @media brk-narrow {
     .FORM {
       padding-left: 40px; } }
+  @media brk-small {
+    .FORM {
+      padding-left: 40px;
+      width: 90%; } }
 
 .MESSAGE {
   width: 350px;
@@ -300,15 +301,15 @@ a img.social:hover {
   /* Opera and prob css3 final iteration */ }
 
 /* BOUNCE ARROW  END=========================== */
-/* LOGO =========================== */
+/* LOGO =========================== opacity: .2;*/
 .LOGO {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   opacity: .2;
   display: block;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 130px;
+  padding-bottom: 130px; }
   @media (max-width: 1093px) {
     .LOGO {
       height: 200px;
@@ -1380,8 +1381,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   transform: translate(-50%, -50%);
   z-index: 0;
   -webkit-filter: grayscale(100%);
-  /* Chrome, Safari, Opera */
-  filter: grayscale(100%); }
+  /* Chrome, Safari, Opera */ }
 
 #Container div {
   position: relative;
@@ -1397,7 +1397,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 ====================*/
 /* IMAGE CONTAINERS  ====================*/
 .rig {
-  max-width: 68%;
+  max-width: 75%;
   margin: auto;
   padding: 0;
   font-size: 0;
@@ -1413,7 +1413,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       max-width: 90%; } }
   @media (max-width: 550px) {
     .rig {
-      max-width: 98%; } }
+      max-width: 100%; } }
 
 .rig li {
   display: inline-block;
@@ -1431,14 +1431,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .rig.CENTER li {
   width: 50%;
   margin: auto; }
+  @media (max-width: 550px) {
+    .rig.CENTER li {
+      width: 100%; } }
 
 .rig.FOUR li {
   margin-top: 10px;
   width: 25%; }
-  @media (max-width: 550px) {
+  @media (max-width: 768px) {
     .rig.FOUR li {
       margin-top: 5px;
       width: 50%; } }
+  @media (max-width: 550px) {
+    .rig.FOUR li {
+      margin-top: 0px;
+      width: 100%; } }
 
 .rig li.TOP {
   width: 100%;
@@ -1447,7 +1454,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   @media (max-width: 550px) {
     .rig li.TOP {
       width: 100%;
-      margin: auto;
+      margin: 0px;
       display: block; } }
 
 /* IMAGE CONTAINERS END  ====================*/
@@ -1556,6 +1563,9 @@ p,
   position: relative;
   overflow: hidden;
   margin: 10px; }
+  @media (max-width: 550px) {
+    .rig-cell {
+      margin: 0px; } }
 
 /* If have the image layer */
 .rig-img {
@@ -1598,9 +1608,9 @@ p,
   width: 100%;
   text-align: center;
   text-transform: capitalize;
-  font-size: 75px;
+  font-size: 45px;
   font-weight: bold;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   font-weight: normal !important;
   top: 40%;
   color: white;
@@ -1611,27 +1621,40 @@ p,
   transition: all .3s; }
   @media (max-width: 1093px) {
     .rig-text {
-      font-size: 55px; } }
+      font-size: 45px; } }
   @media (max-width: 768px) {
     .rig-text {
-      font-size: 55px;
-      top: 38%; } }
+      font-size: 30px;
+      padding: 10px;
+      top: 30%;
+      background: rgba(0, 0, 0, 0.4); } }
   @media (max-width: 550px) {
     .rig-text {
-      font-size: 45px; } }
+      padding: 15px;
+      font-size: 25px;
+      background: rgba(0, 0, 0, 0.4); } }
   @media (max-width: 320px) {
     .rig-text {
-      font-size: 35px; } }
+      font-size: 25px; } }
 
 .rig li:hover .rig-text {
   transform: translateY(0px);
   opacity: 0.9; }
 
+.Small {
+  font-size: 20px; }
+  @media (max-width: 768px) {
+    .Small {
+      font-size: 30px; } }
+  @media (max-width: 550px) {
+    .Small {
+      font-size: 25px; } }
+
 @media only screen and (max-width: 768px) {
   .rig li .rig-text {
     transform: none;
-    opacity: .7;
-    color: #3f3f3f; }
+    opacity: .9;
+    color: white; }
 
   .rig li:hover .rig-overlay {
     display: none; }
