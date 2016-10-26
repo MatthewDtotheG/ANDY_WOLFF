@@ -10,7 +10,6 @@
   display: block;
   position: relative;
   overflow: hidden;
-  margin: 10px; 
 
   @media #{$brk-small} {
     margin: 0px;
@@ -39,7 +38,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  margin: auto;
+  
   background: #151515 no-repeat center 20%;
   background-size: 50px 50px;
   opacity: 0;
@@ -82,12 +81,12 @@
   @media #{$brk-narrow} {
     font-size: 30px;
     padding: 10px;
-    top: 30%;
+    top: 40%;
     background: rgba(black, 0.4)
   }
 
    @media #{$brk-small} {
-    
+    top: 35%;
     padding: 15px;
     font-size: 25px;
     background: rgba(black, 0.4);

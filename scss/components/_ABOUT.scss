@@ -2,11 +2,12 @@
 
 
 .RESUME, 
-.SUBMIT {
+.SEND {
   color: black;
   border: 1px solid black;
   padding: 10px 84px;
   margin: 35px 0px;
+  border-radius: 0px;
 
   @media #{$brk-narrow} {
     padding: 10px 89px;
@@ -21,126 +22,82 @@
   }
 
 
-.SUBMIT {
+.SEND {
     background-color: $color-prim;
     box-sizing: none;
     font-size: 20px;
-    }
+    font-family: $stack-muli;
+    font-weight: 300;
 
-.float1 {
-  float: left;
-  margin-right: 35px;
-
-  @media #{$brk-narrow} {
-    float: none;
-    width: 100%;
-    margin: auto;  
-  }
-}
-/*
-float: left;
-float: right;
-
-*/
-.float2 {
-  float: right;
-  margin: 0px;
-  padding: 0px;
-  margin-top: -27px;
-
-  @media #{$brk-narrow} {
-    float: none;
-    width: 100%;  
+    @media #{$brk-small} {
+    @include span-columns(12);
   }
 }
 
-.FORM {
-  width: 80%;
-  margin: auto;
-  margin-bottom: 600px;
-  margin-top: 600px;
-  display: block;
+
+
+form {
+  
+  margin-top: 400px;
+  margin-bottom: 400px;
   font-size: 20px;
   font-family: $stack-muli;
-
-  @media only screen and (max-width: 3500px) {
-    width: 60%;  
-  }
-
-  @media #{$brk-maxwidth} {
-    width: 80%;
-  }
-
-  @media #{$brk-wide} {
-    width: 80%;
-  }
-
-  
-
-  @media #{$brk-fix} {
-    width: 100%;  
-  }
-
-  @media #{brk-narrow} {
-    padding-left: 40px;
-  }
-
-  @media #{brk-small}{
-    padding-left: 40px;
-    width: 90%;
-  }
-  
-  
 }
 
-.MESSAGE {
-  width: 350px;
-  height: 142px;
-  padding: 10px;
-  padding-left: 5px;
-  margin: 20px 0px;
-  
-  @media only screen and (max-width: 1230px) {
-  width: 320px;  
-  }
+
+
+textarea {
+  background-color: $color-prim;
+  height: 187px;
 }
+
+
+
+#{$all-text-inputs} {
+  background-color: $color-prim;
+  border: 1px solid black;
+  border-radius: 0px;
+}
+
+
+
 
 .RESUME:hover {
   background-color: $color-sec;
   color: $color-text-light;
    }
 
-.SUBMIT:hover {
+.SEND:hover {
   background-color: $color-sec;
   color: $color-text-light;
+  font-weight: 600;
+
    }
 
-.ABOUTWRAP {
 
-  @media #{$brk-small} {
-    text-align: left;
-    float: left;
-    margin-bottom: 55px;
-  }
-}
-
-.social {
+.social,
+.socialG {
   height: 30px;
   width: 30px;
   margin-right: 20px;
-  margin-top: 30px; }
+  margin-top: 30px;
+}
+
+.socialG {
+  margin-right: 4px;
+}
 
 .SocialWrap {
   
   float: none;
   text-align: center;
 
-  @media #{$brk-small} {
-    margin-left: 20px;
-  }
 }
 
 a img.social:hover {
+  opacity: .5; }
+
+a img.socialG:hover {
   opacity: .5; }
 
 .A {

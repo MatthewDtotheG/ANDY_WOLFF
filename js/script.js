@@ -196,7 +196,6 @@ $('#nav-icon3').click(function() {
 
 
 
-
 // STICKY HEADER ===============================
 
 

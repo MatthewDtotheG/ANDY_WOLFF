@@ -60,34 +60,16 @@
 
 /* LOGO =========================== opacity: .2;*/
 .LOGO {
-  height: 200px;
-  width: 200px;
-  margin: auto;
+
   opacity: .2;
-  display: block;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  margin: 200px;
+  @include span-columns(3);
+  @include shift(4.5);
+  
+  
+  }
+  
 
-  @media #{$brk-wide} {
-    height: 200px;
-    width: 200px; }
-
-  @media #{$brk-narrow} {
-    height: 150px;
-    width: 150px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px; }
-   
-
-  @media #{$brk-small} {
-    height: 100px;
-    width: 100px;
-    margin-top: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px; }
-} 
 
 .LOGONAV {
   height: 40px;
@@ -103,13 +85,12 @@
   }
 
   .LOGOFOOTER {
-  height: 40px;
-  width: 40px;
-  display: block;
-  margin: auto;
-  padding-top: 60px;
-  margin-bottom: 0px;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    display: block;
   }
+  
 
 .NAME {
 
@@ -128,25 +109,7 @@
   }   
 }
 
-.PLAY {
-  width: 0; 
-  height: 0; 
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent; 
-  border-left: 60px solid #d9d9d9;
-  margin: auto;
-  display: block;
-}
 
-.PLAYSMALL{ 
-  width: 0; 
-  height: 0; 
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent; 
-  border-left: 30px solid #d9d9d9;
-  margin: auto;
-  display: block;
-}
 
 
 

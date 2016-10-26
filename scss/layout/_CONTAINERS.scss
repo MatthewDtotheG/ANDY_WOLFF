@@ -47,128 +47,10 @@ video {
 
 } 
 
-/* VIDEO CONTAINER END 
+/* VIDEO CONTAINER END   ====================*/
 
 
 
-====================*/
-
-
-
-
-
-
-/* IMAGE CONTAINERS  ====================*/
-.rig {
-  max-width: 75%;
-  margin: auto;
-  padding: 0;
-  font-size: 0;
-  list-style: none;
-  background-color: $color-prim;
-  border-color: none;
-  position: relative; 
-
-  @media #{$brk-wide} {
-    max-width: 80%;
-  }
-
-  @media #{$brk-narrow} {
-    max-width: 90%; 
-  }
-
-  @media #{$brk-small} {
-    max-width: 100%; 
-  }
-}
-
-.rig li {
-  display: inline-block;
-  *display: inline;
-  /*for IE6 - IE7*/
-  width: 25%;
-  vertical-align: middle;
-  box-sizing: border-box;
-  margin: auto;
-  padding: 0; 
-
-  @media #{$brk-narrow} {
-    width: 33.33%; 
-  }
-
-}
-
-
-.rig.CENTER li {
-  width: 50%;
-  margin: auto;
-
-  @media #{$brk-small} {
-    
-    width: 100%; 
-    }
-
-  }
-
-.rig.FOUR li {
-  margin-top: 10px;
-  width: 25%;
-
-  @media #{$brk-narrow} {
-    margin-top: 5px;
-    width: 50%; 
-  }
-
-  @media #{$brk-small} {
-    margin-top: 0px;
-    width: 100%; 
-  }
-
-}
-
-.rig li.TOP {
-  width: 100%;
-  margin: auto;
-  display: block;
-
-   @media #{$brk-small} {
-    width: 100%;
-    margin: 0px;
-    display: block;
-  }
-}
-
-/* IMAGE CONTAINERS END  ====================*/
-
-
-
-
-
-
-/* CALL TO ACTION CONTAINER  ====================*/
- p,
- .call {
-  max-width: 66%;
-  margin-bottom: 100px;
-
-  @media #{$brk-wide} {
-    max-width: 78%;
-    margin-bottom: 100px;
-  }
-
-  @media #{$brk-narrow} {
-    max-width: 87%;
-  }
-
-  @media #{$brk-small} {
-    max-width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: left; }
-}
-
-/* CALL TO ACTION CONTAINER END  ====================*/
 
 
 
@@ -179,32 +61,34 @@ video {
 
 .PROFPIC {
   border-radius: 50%;
-  width: 30%;
+  @include span-columns(4);
   float: left;
   position: relative;
-  margin: 10px; 
+  margin: 10px;
 
-  @media #{$brk-narrow}{
+  @media #{$brk-narrow} {
     width: 45%;
     float: none;
     position: relative;
     display: block;
     margin: auto; 
     margin-bottom: 45px;
+
   }
 
   @media #{$brk-small}{
-    margin-bottom: 20px;
+ 
   }
 
 }
+
 
 .ABOUT {
   position: relative;
   float: right;
   font-size: 20px;
   text-align: left;
-  width: 60%;
+  @include span-columns(7.5);
   margin: 10px;
   border-left: 1px solid black;
   padding-left: 35px;
@@ -216,54 +100,84 @@ video {
   }
 
   @media #{$brk-narrow} {
-    padding-left: 40px;
-    padding-right: 10px;
-    margin-left: 0px;
-    font-size: 16px;
-    width: 90%; 
-  }
 
-  @media #{$brk-small} {
-    padding-left: 0px;
-    padding: 0px;
-    width: 90%;
+    @include span-columns(12);
     border-left: 0px;
-    float: none;  
-    margin: auto;
+    padding: 0px 10px;
+    margin: 0px;
     text-align: center;
 
   }
 
 }
 
-.rigAbout {
-  max-width: 67%;
-  margin: auto;
-  padding: 0;
-  list-style: none;
-  background-color: $color-prim;
-  border-color: none;
-  margin-bottom: 1000px;
-  margin-top: 200px;
-  
 
-  @media #{$brk-wide} {
-    max-width: 78%;
+
+.NEW {
+  @include outer-container(70%);
+
+  @media #{$brk-narrow} {
+    @include outer-container(100%);
   }
-
-  
-
-  @media #{$brk-narrow}{
-
-    margin-top: 150px;
-    max-width: 90%;
-    margin-bottom: 750px; }
-
-  @media #{$brk-small} {
-    margin-top: 170px;
-    margin-bottom: 300px;
-    max-width: 100%; }
 }
+
+#FILM {
+  @include span-columns(6);
+
+  @media #{$brk-narrow} {
+    @include span-columns(12);
+  }
+}
+
+#DIGITAL {
+  @include span-columns(6);
+
+  @media #{$brk-narrow} {
+    @include span-columns(12);
+  }
+}
+
+
+li {
+  @include span-columns(3);
+  @include omega(4n);
+
+  @media #{$brk-narrow} {
+    @include span-columns(12);
+  }
+}
+
+.FORM0 {
+  @include span-columns(6);
+
+  @media #{$brk-narrow} {
+    @include span-columns(12);
+    padding: 0px 20px;
+  }
+}
+
+.FORM1 {
+   @include span-columns(6);
+
+   @media #{$brk-narrow} {
+    @include span-columns(12);
+    padding: 0px 20px;
+  }
+}
+
+.REEL {
+  margin-bottom: 20px;
+  margin-top: 50px;
+  @include span-columns(12);
+
+  @media #{$brk-narrow} {
+    margin-bottom: 0px;
+  }
+}
+
+
+
+
 
 
 
