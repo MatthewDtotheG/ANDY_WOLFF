@@ -79,7 +79,6 @@ video {
   @media #{$brk-small}{
  
   }
-
 }
 
 
@@ -91,7 +90,7 @@ video {
   @include span-columns(7.5);
   margin: 10px;
   border-left: 1px solid black;
-  padding-left: 35px;
+  padding-left: 20px;
   margin-right: 0px;
 
   @media #{$brk-fix} {
@@ -120,6 +119,8 @@ video {
     @include outer-container(100%);
   }
 }
+
+
 
 #FILM {
   @include span-columns(6);

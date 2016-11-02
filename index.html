@@ -75,11 +75,13 @@
 
 
 
-<div class="NEW">
-
+    <div class="NEW">
 
 
     <div id="arrow"></div>  
+
+ 
+    <div class="NEW1">
       <hr>
 
         <h2>
@@ -88,10 +90,11 @@
         </h2>
 
       <hr>
+    </div>
+
 
 
     
-
 
     <div class="rig" id="motion">
         <div id="lightgallery">
@@ -142,17 +145,21 @@
   <img class="LOGO"  src="img/LOGO2.png"></img>
 
     <div class="rig">
-          <li id="FILM" class="rig-cell">
+          
+            <li id="FILM" class="rig-cell">
               <img id="still" class="rig-img" src='img/1.jpg'>
               <span class="rig-overlay"></span>
               <span class="rig-text">FILM</span>
-          </li>
+            </li>
+       
     
-          <li id="DIGITAL" class="rig-cell">
+         
+            <li id="DIGITAL" class="rig-cell">
               <img class="rig-img" src='img/2.jpg'>
               <span class="rig-overlay"></span>
               <span class="rig-text">DIGITAL</span>
-          </li>
+            </li>
+       
     </div>
 
 
@@ -195,30 +202,35 @@
         </p>        
     </div>
 
-
     <div id="contact" class="BREAK"></div>
 
-<!--
-    <form method="post" enctype="text/plain" action="contact-form-handler.php">
 
-      <div class="FORM1">
-        MESSAGE*<br>
-        <textarea type="text" name="comment" class="MESSAGE" rows="4" cols="50">
-        </textarea><br>
-      </div>
-      
-      <div class="FORM0">
-        NAME*<br>      
-        <input type="text" name="name"><br>
-        E-MAIL*
-        <input type="text" name="mail"><br>
-        <input class="SEND" type="submit" value="SEND">
-      </div>
 
-    </form>
 
-        <div class="BREAK"></div>
-  -->
+      <form id="ajax-contact" method="post" action="mailer.php">
+        
+        <div class="FORM1">
+          MESSAGE*<br>
+          <textarea id="message" name="message" class="MESSAGE" required></textarea><br>
+        </div>
+        
+        <div class="FORM0">
+          NAME*<br>      
+          <input type="text" id="name" name="name" required><br>
+          E-MAIL*
+          <input type="text" id="email" name="email" required><br>
+          <input class="SEND" type="submit" value="SEND">
+        </div>
+      </form>
+
+      <div id="form-messages"></div>
+
+    
+
+     <div class="BREAK"></div>
+
+        
+  
 
 </div>
 
