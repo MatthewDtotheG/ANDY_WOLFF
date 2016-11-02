@@ -21,7 +21,6 @@
 
   }
 
-
 .SEND {
     background-color: $color-prim;
     box-sizing: none;
@@ -91,13 +90,11 @@ textarea {
 }
 
 
-
 #{$all-text-inputs} {
   background-color: $color-prim;
   border: 1px solid black;
   border-radius: 0px;
 }
-
 
 
 .RESUME:hover {
