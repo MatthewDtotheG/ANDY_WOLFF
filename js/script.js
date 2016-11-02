@@ -27,11 +27,6 @@ $(function(){
 //ANCHOR TAGS END ===============================
 
 
-
-
-
-
-
 // VIDEO GALLERY
 
 $("#lightgallery").lightGallery({
