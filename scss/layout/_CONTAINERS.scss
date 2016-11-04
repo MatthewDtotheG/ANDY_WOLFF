@@ -53,64 +53,7 @@ video {
 
 
 
-
-
-
-
-/* ABOUT PAGE CONTAINERS  ====================*/
-
-.PROFPIC {
-  border-radius: 50%;
-  @include span-columns(4);
-  float: left;
-  position: relative;
-  margin: 10px;
-
-  @media #{$brk-narrow} {
-    width: 45%;
-    float: none;
-    position: relative;
-    display: block;
-    margin: auto; 
-    margin-bottom: 45px;
-
-  }
-
-  @media #{$brk-small}{
- 
-  }
-}
-
-
-.ABOUT {
-  position: relative;
-  float: right;
-  font-size: 20px;
-  text-align: left;
-  @include span-columns(7.5);
-  margin: 10px;
-  border-left: 1px solid black;
-  padding-left: 20px;
-  margin-right: 0px;
-
-  @media #{$brk-fix} {
-    font-size: 16px;
-    padding-left: 20px;  
-  }
-
-  @media #{$brk-narrow} {
-
-    @include span-columns(12);
-    border-left: 0px;
-    padding: 0px 10px;
-    margin: 0px;
-    text-align: center;
-
-  }
-
-}
-
-
+/* MAIN BODY CONTAINERS   ====================*/
 
 .NEW {
   @include outer-container(70%);
@@ -177,8 +120,62 @@ li {
 }
 
 
+/* MAIN BODY CONTAINERS  END  ====================*/
 
 
+
+
+
+
+/* ABOUT PAGE CONTAINERS  ====================*/
+
+.PROFPIC {
+  border-radius: 50%;
+  @include span-columns(4);
+  float: left;
+  position: relative;
+  margin: 10px;
+
+  @media #{$brk-narrow} {
+    width: 45%;
+    float: none;
+    position: relative;
+    display: block;
+    margin: auto; 
+    margin-bottom: 45px;
+
+  }
+
+}
+
+
+.ABOUT {
+  position: relative;
+  float: right;
+  font-size: 20px;
+  text-align: left;
+  @include span-columns(7.5);
+  margin: 10px;
+  border-left: 1px solid black;
+  padding-left: 20px;
+  margin-right: 0px;
+
+  @media #{$brk-fix} {
+    font-size: 16px;
+    padding-left: 20px;  
+  }
+
+  @media #{$brk-narrow} {
+
+    @include span-columns(12);
+    border-left: 0px;
+    padding: 0px 10px;
+    margin: 0px;
+    text-align: center;
+
+  }
+
+}
 
 
 
